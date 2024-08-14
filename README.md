@@ -60,6 +60,38 @@ Step5: import the SQL database to GLUE_TOOLS database
 $mysql> SOURCE glue_jar_files/ncbi_rabv_glue.sql
 ```
 
+## setup the gluetools config file
+Gluetools uses its own config while which is a XML file contains the path of the various tools used by the gluetools. 
+
+To edit the path you can open the file from a directory "gluetoos_jar_file" a file named gluetools-config.xml. All the required software for the gluetools is installed by the gluetools.yml environment you can activate it by running below command
+
+Gluetools uses a custom configuration file, which is an XML file that specifies the paths to various tools utilized by Gluetools. To edit these paths, open the "gluetools-config.xml" file located in the "gluetools_jar_file" directory. All the necessary software for Gluetools is installed through the "gluetools.yml" environment, which can be activated by running the following command:
+
+```shell
+conda activate gluetools
+```
+```shell
+which blasts
+```
+/Users/<user-name>/miniforge3/envs/gluetools/bin/blastn
+```shell
+which tblastn
+```
+/Users/sandeep.kasaragod/miniforge3/envs/gluetools/bin/tblastn
+```shell
+which makeblastdb
+```
+/Users/sandeep.kasaragod/miniforge3/envs/gluetools/bin/makeblastdb
+```shell
+which table2asn 
+```
+/Users/sandeep.kasaragod/miniforge3/envs/gluetools-testing/bin/table2asn
+```shell
+which mafft
+```
+/Users/sandeep.kasaragod/miniforge3/envs/gluetools-testing/bin/mafft
+
+
 ## Running the GUI
 Once all the above setups are successful, it is good to test if the glue-gui it working correctly or not. glue-gui can be run with using the script glue-gui.sh. This file contains the parameters necessary to run the GUI. The GUI requires javafx-sdk to run the gui, the javafx-sdk by default comes with the glue-gui tool. Upon any errors. You can run download the appropriate sdk from the https://openjfx.io
 
