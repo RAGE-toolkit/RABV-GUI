@@ -82,7 +82,7 @@ At this moment, Glue-GUI provides two functions. 1) maxLikeHoodGenotyper and 2) 
 
 maxLikeHoodGenotyper requires rabies fasta file to tell which alignment the sequence belongs. 
 
-genBankSubmission function, generates the GenBank submission template. It uses the latest table2asn tool to generate the SQN files. It requires fasta file directory, submission template and tabular file as an input to generate the SQN files.
+genBankSubmission function, generates the GenBank sequence submission files (*.SQN). It uses the latest table2asn tool to generate the SQN files. It requires fasta file directory, submission template and tabular file as an input to generate the SQN files.
 
 
 
