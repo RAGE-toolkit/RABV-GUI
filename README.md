@@ -128,6 +128,7 @@ maxLikeHoodGenotyper requires rabies fasta file to tell which alignment the sequ
 
 genBankSubmission function, generates the GenBank sequence submission files (*.SQN). It uses the latest table2asn tool to generate the SQN files. It requires fasta file directory, submission template and tabular file as an input to generate the SQN files.
 
+Directory named test_data provides the data necessary to run the GenBank submission test. Also the maxLikeHoodGenotyper can be tested by uploading fasta file available on test_data/fasta-seq directory. 
 
 
 
