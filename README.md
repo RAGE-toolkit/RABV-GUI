@@ -17,7 +17,7 @@ https://docs.anaconda.com/miniconda/
 Note: Download and install the appropriate version of the Conda as the your OS.
 
 
-##Download and setup the environments
+## Download and setup the environments
 
 Download the GLUE-GUI from HTTPS:/\
 
