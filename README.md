@@ -67,7 +67,7 @@ To edit the path you can open the file from a directory "gluetoos_jar_file" a fi
 
 Gluetools uses a custom configuration file, which is an XML file that specifies the paths to various tools utilized by Gluetools. To edit these paths, open the "gluetools-config.xml" file located in the "gluetools_jar_file" directory. All the necessary software for Gluetools is installed through the "gluetools.yml" environment, which can be activated by running the following command:
 
-### get software path
+### Get software path
 ```shell
 conda activate gluetools
 ```
