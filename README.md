@@ -93,8 +93,6 @@ which mafft
 You may have similar path /Users/your-user-name/miniforge3/envs/gluetools-testing/bin/mafft
 
 ### Set temporary file paths for above listed software
-All the above listed software generates analysis results which requires to be stored in a temporary directory. Which can be added to the gluetools-config.xml file. Assuming that the glue-gui is stored in /Users/your-user-name/glue-gui_v1/. Example I want to add the temporary file directory for blastfiles, in a gluetools-config.xml you can look for a tag <name>gluetools.core.programs.blast.temp.dir</name> under this section <value> tag where you can add the blastfiles path, something like this <value>/Users/your-user-name/glue-gui_v1/tmp/blastfiles</value>. Similarly other paths can be set as mentioned below.
-
 All the software mentioned above generates analysis results that need to be stored in a temporary directory. This directory can be specified in the gluetools-config.xml file. Assuming that the Glue GUI is located at /Users/your-user-name/glue-gui_v1/. Example, you can add the temporary file directory for BLAST files by locating the <name> tag with the value gluetools.core.programs.blast.temp.dir. Under this section, within the corresponding <value> tag, you can set the path for BLAST files, such as <value>/Users/your-user-name/glue-gui_v1/tmp/blastfiles</value>. Similarly, paths for other temporary files can be configured in the same way.
 
 ```
