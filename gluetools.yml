@@ -1,0 +1,11 @@
+name: gluetools
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - java-jdk=8.0.45
+  - blast=2.2.32
+  - mafft
+  - raxml
+  - table2asn
