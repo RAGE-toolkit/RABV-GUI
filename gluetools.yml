@@ -5,7 +5,7 @@ channels:
   - defaults
 dependencies:
   - java-jdk=8.0.45
-  - blast=2.2.32
+  - blast=2.2.31
   - mafft
   - raxml
   - table2asn
