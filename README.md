@@ -73,23 +73,23 @@ conda activate gluetools
 ```shell
 which blasts
 ```
-/Users/<user-name>/miniforge3/envs/gluetools/bin/blastn
+/Users/user-name/miniforge3/envs/gluetools/bin/blastn
 ```shell
 which tblastn
 ```
-/Users/sandeep.kasaragod/miniforge3/envs/gluetools/bin/tblastn
+/Users/user-name/miniforge3/envs/gluetools/bin/tblastn
 ```shell
 which makeblastdb
 ```
-/Users/sandeep.kasaragod/miniforge3/envs/gluetools/bin/makeblastdb
+/Users/user-name/miniforge3/envs/gluetools/bin/makeblastdb
 ```shell
 which table2asn 
 ```
-/Users/sandeep.kasaragod/miniforge3/envs/gluetools-testing/bin/table2asn
+/Users/user-name/miniforge3/envs/gluetools-testing/bin/table2asn
 ```shell
 which mafft
 ```
-/Users/sandeep.kasaragod/miniforge3/envs/gluetools-testing/bin/mafft
+/Users/user-name/miniforge3/envs/gluetools-testing/bin/mafft
 
 
 ## Running the GUI
