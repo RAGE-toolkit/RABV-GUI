@@ -74,7 +74,7 @@ The successful installation will launch the GLUE-GUI.
 
 The first time GUI launch will require few things to be setup such as path of the gluetools jar file and its configuration files.
 
-####Setting up the glue and path
+#### Setting up the glue and path
 goto-->settings-->Set glue and DB --> browse the gluetools jar and configuration files from gluetoos_jar_file directory with the GLUE-GUI
 
 ## Running the analysis
