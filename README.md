@@ -22,8 +22,8 @@ Note: Download and install the appropriate version of the Conda as the your OS.
 Download the GLUE-GUI from HTTPS:/\
 
 ```shell
-$unzip glue-gui_v1.0.0.gz
-$cd glue-gui_v1.0.0
+$unzip glue-gui_v1.gz
+$cd glue-gui_v1
 $conda env create --file environment.yml
 $conda env create --file gluetools.yml
 ```
@@ -74,25 +74,37 @@ conda activate gluetools
 ```shell
 which blasts
 ```
-You may have similar path /Users/user-name/miniforge3/envs/gluetools/bin/blastn
+You may have similar path /Users/your-user-name/miniforge3/envs/gluetools/bin/blastn
 ```shell
 which tblastn
 ```
-You may have similar path /Users/user-name/miniforge3/envs/gluetools/bin/tblastn
+You may have similar path /Users/your-user-name/miniforge3/envs/gluetools/bin/tblastn
 ```shell
 which makeblastdb
 ```
-You may have similar path /Users/user-name/miniforge3/envs/gluetools/bin/makeblastdb
+You may have similar path /Users/your-user-name/miniforge3/envs/gluetools/bin/makeblastdb
 ```shell
 which table2asn 
 ```
-You may have similar path /Users/user-name/miniforge3/envs/gluetools-testing/bin/table2asn
+You may have similar path /Users/your-user-name/miniforge3/envs/gluetools-testing/bin/table2asn
 ```shell
 which mafft
 ```
-You may have similar path /Users/user-name/miniforge3/envs/gluetools-testing/bin/mafft
+You may have similar path /Users/your-user-name/miniforge3/envs/gluetools-testing/bin/mafft
 
-### Set temorary file paths for above listed software
+### Set temporary file paths for above listed software
+All the above listed software generates analysis results which requires to be stored in a temporary directory. Which can be added to the gluetools-config.xml file. Assuming that the glue-gui is stored in /Users/your-user-name/glue-gui_v1/. Example I want to add the temporary file directory for blastfiles, in a gluetools-config.xml you can look for a tag <name>gluetools.core.programs.blast.temp.dir</name> under this section <value> tag where you can add the blastfiles path, something like this <value>/Users/your-user-name/glue-gui_v1/tmp/blastfiles</value>. Similarly other paths can be set as mentioned below.
+
+All the software mentioned above generates analysis results that need to be stored in a temporary directory. This directory can be specified in the gluetools-config.xml file. Assuming that the Glue GUI is located at /Users/your-user-name/glue-gui_v1/. Example, you can add the temporary file directory for BLAST files by locating the <name> tag with the value gluetools.core.programs.blast.temp.dir. Under this section, within the corresponding <value> tag, you can set the path for BLAST files, such as <value>/Users/your-user-name/glue-gui_v1/tmp/blastfiles</value>. Similarly, paths for other temporary files can be configured in the same way.
+
+```
+/Users/your-user-name/glue-gui_v1/tmp/blastfiles
+/Users/your-user-name/glue-gui_v1/tmp/blastdbs
+/Users/your-user-name/glue-gui_v1/tmp/tbl2asn
+/Users/your-user-name/glue-gui_v1/tmp/mafftfiles
+/Users/your-user-name/glue-gui_v1/tmp/samfiles
+```
+
 
 ## Running the GUI
 Once all the above setups are successful, it is good to test if the glue-gui it working correctly or not. glue-gui can be run with using the script glue-gui.sh. This file contains the parameters necessary to run the GUI. The GUI requires javafx-sdk to run the gui, the javafx-sdk by default comes with the glue-gui tool. Upon any errors. You can run download the appropriate sdk from the https://openjfx.io
