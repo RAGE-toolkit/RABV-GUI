@@ -29,7 +29,7 @@ $conda env create --file environment.yml
 $conda env create --file gluetools.yml
 ```
 
-##Installing the MySQL
+## Installing the MySQL
 Select the appropriate version of the MySQL Community Server according to your operating system. The gluetools recommends MySQL Community Server 8.0.39 which can be found in the below link.
 
 ```shell
