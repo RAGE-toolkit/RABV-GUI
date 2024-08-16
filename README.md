@@ -122,6 +122,7 @@ Once all the above setups are successful, it is good to test if the glue-gui it 
 
 ### Lanuching the GUI
 ```shell
+conda activate glue-gui
 bash glue-gui.sh
 ```
 
