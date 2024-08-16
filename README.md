@@ -77,7 +77,7 @@ Gluetools uses a custom configuration file, which is an XML file that specifies 
 conda activate gluetools
 ```
 ```shell
-which blasts
+which blastn
 ```
 You may have similar path /Users/your-user-name/miniforge3/envs/gluetools/bin/blastn
 ```shell
