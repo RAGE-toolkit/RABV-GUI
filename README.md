@@ -23,10 +23,10 @@ Download the GLUE-GUI https://drive.google.com/file/d/1yzeLleRWDt3CnMe3whs3WdTcF
 
 
 ```shell
-$tar -xvzf glue-gui-v1.tar.gz
-$cd glue-gui-v1
-$conda env create --file environment.yml
-$conda env create --file gluetools.yml
+tar -xvzf glue-gui-v1.tar.gz
+cd glue-gui-v1
+conda env create --file environment.yml
+conda env create --file gluetools.yml
 ```
 
 ## Installing the MySQL
