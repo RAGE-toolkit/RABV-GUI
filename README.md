@@ -23,7 +23,7 @@ Download the GLUE-GUI https://drive.google.com/file/d/1KSNsJxT3zwJUeev53KMhK67Ce
 
 
 ```shell
-$unzip glue-gui_v1.gz
+$tar -xvzf glue-gui_v1.gz
 $cd glue-gui_v1
 $conda env create --file environment.yml
 $conda env create --file gluetools.yml
