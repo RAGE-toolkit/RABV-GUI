@@ -46,19 +46,19 @@ $mysql -h localhost -u root -p
 ```
 Step 2: create gluetools user with password
 ```shell
-$mysql> create user 'gluetools'@'localhost' identified by 'Password123#@!';
+create user 'gluetools'@'localhost' identified by 'Password123#@!';
 ```
 Step3: create a database GLUE_TOOLS
 ```shell
-$mysql> create database GLUE_TOOLS character set UTF8;
+create database GLUE_TOOLS character set UTF8;
 ```
 Step4: grant all the privileges to database (GLUE_TOOLS)
 ```shell
-$mysql> grant all privileges on GLUE_TOOLS.* to 'gluetools'@'localhost';
+grant all privileges on GLUE_TOOLS.* to 'gluetools'@'localhost';
 ```
 Step5: import the SQL database to GLUE_TOOLS database
 ```shell
-$mysql> SOURCE glue_jar_files/ncbi_rabv_glue.sql
+SOURCE glue_jar_files/ncbi_rabv_glue.sql
 ```
 
 ## Setup the gluetools config file
