@@ -64,6 +64,10 @@ Step6: import the SQL database to GLUE_TOOLS database
 ```shell
 SOURCE glue_jar_files/ncbi_rabv_glue.sql
 ```
+Step7: exit the mySQL
+```shell
+exit
+```
 
 ## Setup the gluetools config file
 Gluetools uses its own config while which is a XML file contains the path of the various tools used by the gluetools. 
