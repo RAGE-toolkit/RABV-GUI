@@ -56,7 +56,11 @@ Step4: grant all the privileges to database (GLUE_TOOLS)
 ```shell
 grant all privileges on GLUE_TOOLS.* to 'gluetools'@'localhost';
 ```
-Step5: import the SQL database to GLUE_TOOLS database
+Step5: use GLUE_TOOLS database
+```shell
+use GLUE_TOOLS
+```
+Step6: import the SQL database to GLUE_TOOLS database
 ```shell
 SOURCE glue_jar_files/ncbi_rabv_glue.sql
 ```
