@@ -19,7 +19,7 @@ Note: Download and install the appropriate version of the Conda as the your OS.
 
 ## Download and setup the environments
 
-Download the GLUE-GUI https://drive.google.com/file/d/1EgYO3bM_GS8psc89U1BWTBwqbxo7MAp-/view?usp=sharing
+Download the GLUE-GUI https://drive.google.com/file/d/1S5Ziq7Cjb_lyWkesuzTT9KwwlicTWCmB/view?usp=sharing
 
 
 ```shell
