@@ -42,7 +42,7 @@ The gluetools requires its own mysql user to communicate with glue database. The
 
 Step 1: login to mysql with root user
 ```shell
-$mysql -h localhost -u root -p
+mysql -h localhost -u root -p
 ```
 Step 2: create gluetools user with password
 ```shell
