@@ -120,7 +120,7 @@ All the software mentioned above generates analysis results that need to be stor
 ## Running the GUI
 Once all the above setups are successful, it is good to test if the glue-gui it working correctly or not. glue-gui can be run with using the script glue-gui.sh. This file contains the parameters necessary to run the GUI. The GUI requires javafx-sdk to run the gui, the javafx-sdk by default comes with the glue-gui tool. Upon any errors. You can run download the appropriate sdk from the https://openjfx.io
 
-### Lanuching the GUI
+### Launching the GUI
 ```shell
 conda activate glue-gui
 bash glue-gui.sh
