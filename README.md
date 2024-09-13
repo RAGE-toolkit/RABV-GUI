@@ -1,4 +1,4 @@
-https://drive.google.com/file/d/1rt-MtKVwCT5DBU-n3nFzvjNfQxBBDb0G/view?usp=sharing
+(https://drive.google.com/file/d/1NSXyJxIriafKxZWqMQd10rmfKJ023zDj/view?usp=sharing)
 
 GLUE-GUI is a graphical user interface designed for running RABV-GLUE, specifically to facilitate GenBank submissions for rabies sequences. In addition to supporting GenBank submissions, GLUE-GUI has been updated with the latest rabies sequences and can perform database queries similar to those available on the RABV-GLUE website (http://rabv-glue.cvr.gla.ac.uk/).
 
