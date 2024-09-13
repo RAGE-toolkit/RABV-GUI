@@ -22,7 +22,6 @@ Note: Download and install the appropriate version of the Conda as the your OS.
 ## Download and setup the environments
 
 Download the https://drive.google.com/file/d/1h134dmBP_GIG2nZnWNBkwQ4NYanbzxTt/view?usp=sharing
-
 ```shell
 tar -xvzf glue-gui-v1.tar.gz
 cd glue-gui-v1
