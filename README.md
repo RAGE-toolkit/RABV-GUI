@@ -29,11 +29,12 @@ Your terminal should look something like this
 
 ![Alt text](img/sudo_mysql.png)
 
-Run the below command and exit from mySQL. Presently the root password is set to root@123. Feel free to change it.
+Run the below command and exit from mySQL. Presently the root password is set to root@123. Feel free to change it. 
 ```shell
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@123';
 exit
 ```
+<b>Note</b>: The tool also creates the mysql user 'gluetools' with password 'Password123#@!'. It is highly not recommended to change its password, Otherwise the program may break.
 
 Securly store MySQL login credentials without exposing the password in plain text. This will enable the tool to access the glue_tools database without credentials.
 
