@@ -4,7 +4,12 @@ GLUE-GUI is a graphical user interface designed for running RABV-GLUE, specifica
 GLUE_GUI is developed in Java, so having Java installed is essential. We recommend using Conda to run GLUE-GUI, which makes the installation process simple.
 
 ## MySQL installation on Mac OS
-Select the appropriate version of the MySQL Community Server according to your operating system. The gluetools recommends MySQL Community Server 8.0.39 which can be found in the below link.
+Select the appropriate version of the MySQL Community Server according to your operating system. Gluetools recommends MySQL Community Server 8.0.39, which can be found at the link below. For ease of installation, the install.sh script performs the following tasks:
+- Install curl if it does not exist
+- Install Conda/miniforge if it does not exist
+- Create an environment gluetools (which contains RAxML, BLAST, MAFFT, TBLASTN)
+- Create an environment glue-gui (which contains Java)
+- Download the JavaFX SDK depending on the OS and architecture
 
 ```shell
 https://dev.mysql.com/downloads/mysql/
