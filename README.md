@@ -25,6 +25,8 @@ sudo mysql
 
 Your terminal should look something like this
 
+![Alt text](img/sudo-mysql.png)
+
 
 
 ## Download and setup the environments
