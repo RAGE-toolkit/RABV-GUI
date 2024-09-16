@@ -41,7 +41,7 @@ exit
 ```
 <b>Note</b>: The tool also creates the mysql user 'gluetools' with password 'Password123#@!'. It is highly not recommended to change password, otherwise the program may not work.
 
-Securly store MySQL login credentials without exposing the password in plain text. This will enable the tool to access the glue_tools database without credentials.
+Securly store MySQL login credentials without exposing the password in plain text. This will enable the tool to access mySQL and glue_tools database without credentials.
 
 ```shell
  mysql_config_editor set --login-path=local --host=localhost --user=root --password
