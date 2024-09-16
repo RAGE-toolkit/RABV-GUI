@@ -17,7 +17,7 @@ Setup the mySQL with appropriate root user and credentials for the error free po
 
 ## Download and setup the environments
 
-Download the https://drive.google.com/file/d/1ZDhnJwFh6oBvHetYyh0-NjktRp1dArxv/view?usp=sharing
+Download the https://drive.google.com/file/d/1hBY2FhuA1ieBAeHwx-7CW51ZoVExqCQz/view?usp=sharing
 ```shell
 unzip glue-gui-v1.zip
 cd glue-gui-v1
