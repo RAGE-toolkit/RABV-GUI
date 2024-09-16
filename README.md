@@ -34,7 +34,7 @@ Run the below command and exit from mySQL. Presently the root password is set to
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@123';
 exit
 ```
-<b>Note</b>: The tool also creates the mysql user 'gluetools' with password 'Password123#@!'. It is highly not recommended to change its password, Otherwise the program may break.
+<b>Note</b>: The tool also creates the mysql user 'gluetools' with password 'Password123#@!'. It is highly not recommended to change password, otherwise the program may not work.
 
 Securly store MySQL login credentials without exposing the password in plain text. This will enable the tool to access the glue_tools database without credentials.
 
