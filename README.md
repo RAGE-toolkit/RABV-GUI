@@ -12,6 +12,18 @@ https://dev.mysql.com/downloads/mysql/
 Setup the mySQL with appropriate root user and credentials for the error free post setups.
 
 ## Installing the MySQL for Linux (Ubuntu OS)
+```shell
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql.service
+```
+
+Once the installation is finish run the below.
+```shell
+sudo mysql
+```
+
+Your terminal should look something like this
 
 
 
@@ -22,14 +34,11 @@ Download the https://drive.google.com/file/d/1hBY2FhuA1ieBAeHwx-7CW51ZoVExqCQz/v
 unzip glue-gui-v1.zip
 cd glue-gui-v1
 bash install.sh
+conda activate glue-gui
 ```
-
-## Running the GUI
-Once all the above setups are successful, it is good to test if the glue-gui it working correctly or not. glue-gui can be run with using the script glue-gui.sh. This file contains the parameters necessary to run the GUI. The GUI requires javafx-sdk to run the gui, the javafx-sdk by default comes with the glue-gui tool. Upon any errors. You can run download the appropriate sdk from the https://openjfx.io
 
 ### Launching the GUI
 ```shell
-conda activate glue-gui
 bash glue-gui.sh
 ```
 
