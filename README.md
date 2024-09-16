@@ -1,15 +1,15 @@
 GLUE-GUI is a graphical user interface designed for running RABV-GLUE, specifically to facilitate GenBank submissions for rabies sequences. In addition to supporting GenBank submissions, GLUE-GUI has been updated with the latest rabies sequences and can perform database queries similar to those available on the RABV-GLUE website (http://rabv-glue.cvr.gla.ac.uk/).
 
 # Installation
-GLUE_GUI is developed in Java, so having Java installed is essential. We recommend using Conda to run GLUE-GUI, which makes the installation process simple.
-
-## MySQL installation on Mac OS
-Select the appropriate version of the MySQL Community Server according to your operating system. Gluetools recommends MySQL Community Server 8.0.39, which can be found at the link below. For ease of installation, the install.sh script performs the following tasks:
+GLUE_GUI is developed in Java, so having Java installed is essential. We recommend using Conda to run GLUE-GUI, which makes the installation process simple. For ease of installation, the install.sh script performs the following tasks:
 - Install curl if it does not exist
 - Install Conda/miniforge if it does not exist
 - Create an environment gluetools (which contains RAxML, BLAST, MAFFT, TBLASTN)
 - Create an environment glue-gui (which contains Java)
 - Download the JavaFX SDK depending on the OS and architecture
+
+## MySQL installation on Mac OS
+Select the appropriate version of the MySQL Community Server according to your operating system. Gluetools recommends MySQL Community Server 8.0.39, which can be found at the link below. 
 
 ```shell
 https://dev.mysql.com/downloads/mysql/
