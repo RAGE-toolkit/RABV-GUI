@@ -27,7 +27,11 @@ Your terminal should look something like this
 
 ![Alt text](img/sudo_mysql.png)
 
-
+Run the below command and exit from mySQL. Presently the root password is set to root@123. Feel free to change it.
+```shell
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@123';
+exit
+```
 
 ## Download and setup the environments
 
