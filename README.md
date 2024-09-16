@@ -33,6 +33,11 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@123
 exit
 ```
 
+Securly store MySQL login credentials without exposing the password in plain text. This will enable the tool to access the glue_tools database without credentials.
+
+```shell
+ mysql_config_editor set --login-path=local --host=localhost --user=root --password
+```
 ## Download and setup the environments
 
 Download the https://drive.google.com/file/d/1hBY2FhuA1ieBAeHwx-7CW51ZoVExqCQz/view?usp=sharing
