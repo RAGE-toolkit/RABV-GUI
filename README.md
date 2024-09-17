@@ -53,7 +53,6 @@ Download the [GLUE-GUI ](https://drive.google.com/file/d/1-ZIn173ika76sp0slswvtL
 unzip glue-gui-v1.zip
 cd glue-gui-v1
 bash install.sh
-conda activate glue-gui
 ```
 
 ### Launching the GUI
