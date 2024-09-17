@@ -48,7 +48,7 @@ Securly store MySQL login credentials without exposing the password in plain tex
 ```
 ## Download and setup the environments
 
-Download the [GLUE-GUI ](https://drive.google.com/file/d/1CK-4k_xRmlUlUAyknQCa3g9dZMAPWZge/view?usp=sharing)
+Download the [GLUE-GUI ](https://drive.google.com/file/d/1-ZIn173ika76sp0slswvtLYjhZFSzrnL/view?usp=sharing)
 ```shell
 unzip glue-gui-v1.zip
 cd glue-gui-v1
