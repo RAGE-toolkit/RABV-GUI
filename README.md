@@ -25,7 +25,7 @@ sudo apt install mysql-server
 sudo systemctl start mysql.service
 ```
 
-Once the installation is finish run the below.
+Run mySQL when the installation is complete.
 ```shell
 sudo mysql
 ```
