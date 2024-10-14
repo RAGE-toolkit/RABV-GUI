@@ -1,0 +1,652 @@
+database initiating
+Writing log file to: Logs/2024-05-10_14_08_01.txt
+
+GlueTools exited with error code: 1
+
+Error loading Jar file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/lib/gluetools-core-1.1.113.jar -c /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/conf/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/lib/gluetools-core-1.1.113.jar -c /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/conf/gluetools-config.xml -i list project
+Directory created successfully.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/settings.config
+
+Setting directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/settings.config
+
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/settings.config
+
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/settings.config
+
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TextArea.setText(String)" because "this.gluePath" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TextArea.setText(String)" because "this.gluePath" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TextArea.setText(String)" because "this.gluePath" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TextArea.setText(String)" because "this.gluePath" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TextArea.setText(String)" because "this.gluePath" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TextArea.setText(String)" because "this.gluePath" is null
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_10052024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+javafx.fxml.LoadException: Error resolving onAction='#glueCloseButton', either the event handler is not in the Namespace or there is an error in the script.
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml:12
+
+javafx.fxml.LoadException: Error resolving onAction='#glueCloseButton', either the event handler is not in the Namespace or there is an error in the script.
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml:12
+
+javafx.fxml.LoadException: Error resolving onAction='#glueCloseButton', either the event handler is not in the Namespace or there is an error in the script.
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml:12
+
+javafx.fxml.LoadException: 
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml
+
+javafx.fxml.LoadException: 
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml
+
+javafx.fxml.LoadException: 
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml
+
+javafx.fxml.LoadException: 
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml
+
+javafx.fxml.LoadException: 
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml
+
+javafx.fxml.LoadException: 
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+javafx.fxml.LoadException: 
+/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/target/classes/com/example/glue/set-path.fxml
+
+An unexpected error occurred: Cannot invoke "javafx.scene.control.ComboBox.getItems()" because "this.loadFunction" is null
+
+An unexpected error occurred: Cannot invoke "javafx.scene.control.ComboBox.setItems(javafx.collections.ObservableList)" because "this.loadFunction" is null
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Directory created successfully.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+An error occurred while reading the file: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+An error occurred while reading the file: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+An error occurred while reading the file: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Writing log file to: Logs/2024-05-20_10_58_46.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Writing log file to: Logs/2024-05-20_11_00_06.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Writing log file to: Logs/2024-05-20_11_01_45.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Writing log file to: Logs/2024-05-20_11_03_12.txt
+
+GlueTools exited with error code: 1
+
+Writing log file to: Logs/2024-05-20_11_05_52.txt
+
+GlueTools exited with error code: 1
+
+Writing log file to: Logs/2024-05-20_11_10_44.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: [/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Modules.tsv/rabvSequenceReporter.txt, Single] (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: [/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Commands/rabvSequenceReporter.txt, Single] (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: [/Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Commands/rabvSequenceReporter.txt, Single] (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException:  (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i  -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i  -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_14_52_31.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_14_55_32.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_14_56_48.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_14_58_31.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_14_59_55.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvSequenceReporter amino-acid -i /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_15_03_25.txt
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvMaxLikelihoodGenotyper genotype file --fileName /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_15_29_12.txt
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvMaxLikelihoodGenotyper genotype file --fileName /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_15_33_43.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvMaxLikelihoodGenotyper genotype file --fileName /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_15_34_31.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvMaxLikelihoodGenotyper genotype file --fileName /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_15_38_30.txt
+
+java.io.FileNotFoundException: module rabvMaxLikelihoodGenotyper genotype file --fileName /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta
+ (No such file or directory)
+
+Writing log file to: Logs/2024-05-20_15_39_07.txt
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.IOException: Cannot run program "testing": error=2, No such file or directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.IOException: Cannot run program "project rabv": error=2, No such file or directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Commands/CreateGbSubmission.txt (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Writing log file to: Logs/2024-05-20_15_46_36.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+java.io.FileNotFoundException: module rabvMaxLikelihoodGenotyper genotype file --fileName /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/sources/batch-2023/SD712.fasta
+ (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/gluetools-core-1.1.113.jar -c /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/conf/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_17052024/Settings/Projects.txt
+An unexpected error occurred: Cannot invoke "javafx.scene.control.ComboBox.setItems(javafx.collections.ObservableList)" because "this.loadModule" is null
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+An unexpected error occurred: Cannot invoke "javafx.scene.control.ComboBox.setItems(javafx.collections.ObservableList)" because "this.loadModule" is null
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+An unexpected error occurred: Cannot invoke "javafx.scene.control.ComboBox.setItems(javafx.collections.ObservableList)" because "this.loadModule" is null
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Error loading Fasta directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+java.io.FileNotFoundException: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Commands/maxLikeHoodGenotyper.txt (No such file or directory)
+
+Error loading tabular directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+java.io.FileNotFoundException: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Commands/maxLikeHoodGenotyper.txt (No such file or directory)
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Error loading Fasta directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Error loading directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Error loading tabular directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_06062024/Settings/Projects.txt
+Writing log file to: Logs/2024-06-09_12_07_47.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_19062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_19062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_19062024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_02072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_02072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/gluetools-core-1.1.113.jar -c /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/conf/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta file
+
+Error loading Fasta file
+
+Error loading directory
+
+Error loading tabular directory
+
+Error loading Fasta directory
+
+Error loading tabular directory
+
+Error loading directory
+
+Error loading tabular directory
+
+Error loading Fasta directory
+
+Error loading directory
+
+Error loading Fasta file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading directory
+
+Writing log file to: Logs/2024-07-29_14_03_14.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_14_39_00.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_14_55_56.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_15_09_19.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_15_11_26.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_15_14_58.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_15_19_17.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_16_08_04.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-29_20_00_13.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading tabular directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/gluetools-core-1.1.120-SNAPSHOT.jar -c /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/conf/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-30_16_56_39.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-30_17_02_04.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta directory
+
+Writing log file to: Logs/2024-07-30_17_34_32.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-30_17_36_57.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-30_17_56_01.txt
+
+GlueTools exited with error code: 1
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-30_21_52_38.txt
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Writing log file to: Logs/2024-07-31_12_40_31.txt
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading Fasta file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Settings/Projects.txt
+Error loading tabular directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_31072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_31072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_31072024/Settings/Projects.txt
+Error loading tabular directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_31072024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_31072024/Settings/Projects.txt
+Error loading Jar file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Error loading Fasta file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Error loading Fasta file
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Error loading directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_09082024/Settings/Projects.txt
+Error loading directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_10082024/Settings/Projects.txt
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_14082024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_14082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_14082024/Settings/Projects.txt
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+An error occurred: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Modules/Modules.tsv (No such file or directory)
+
+Settings directory already exists.
+Please make sure all the paths are correct
+
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/settings.config
+
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/settings.config
+
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+java.io.IOException: Cannot run program "source activate gluetools && java -jar /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-core-1.1.120-SNAPSHOT.jar -c /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-config.xml": error=2, No such file or directory
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_15082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-core-1.1.120-SNAPSHOT.jar -c /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-core-1.1.120-SNAPSHOT.jar -c /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_18082024/Settings/Projects.txt
+Error loading Fasta file
+
+Settings directory already exists.
+File saved to: /Users/sandeep.kasaragod/IdeaProjects/Glue_25082024/settings.config
+
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_25082024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-core-1.1.120-SNAPSHOT.jar -c /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_25082024/Settings/Projects.txt
+Looks like database connection error: To debug, try running
+ java -jar /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-core-1.1.120-SNAPSHOT.jar -c /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/glue_jar_files/gluetools-config.xml -i list project
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_25082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_25082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_25082024/Settings/Projects.txt
+Reading Project file from: /Users/sandeep.kasaragod/IdeaProjects/Glue_25082024/Settings/Projects.txt

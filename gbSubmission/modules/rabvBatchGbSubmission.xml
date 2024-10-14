@@ -1,0 +1,21 @@
+<ecmaFunctionInvoker>
+
+	<scriptFileName>rabvBatchGbSubmission.js</scriptFileName>
+	
+	<function>
+		<name>calculateEntropy</name>
+		<parameter>
+			<name>source</name>
+		</parameter>
+		<parameter>
+			<name>metadata</name>
+		</parameter>
+		<parameter>
+			<name>template</name>
+		</parameter>
+	
+		<tableFromObjectsResultType/>
+	</function>
+	
+</ecmaFunctionInvoker>
+	 

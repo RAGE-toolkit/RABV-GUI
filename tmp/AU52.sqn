@@ -1,0 +1,939 @@
+Seq-submit ::= {
+  sub {
+    contact {
+      contact {
+        name name {
+          last "Ukande",
+          first "Agatha",
+          middle "",
+          initials "",
+          suffix "",
+          title ""
+        },
+        affil std {
+          affil "Africa Center of Excellence of Neglected Tropical Diseases,
+ Ahmadu Bello University, Zaria",
+          div "Biochemistry",
+          city "Zaria",
+          sub "Kaduna",
+          country "Nigeria",
+          street "Sokoto Road",
+          email "agathaukande@gmail.com",
+          phone "08163207194",
+          postal-code "810002"
+        }
+      }
+    },
+    cit {
+      authors {
+        names std {
+          {
+            name name {
+              last "Ukande",
+              first "Agatha",
+              initials "A.S."
+            }
+          },
+          {
+            name name {
+              last "Kia",
+              first "Grace",
+              initials "G.S.N."
+            }
+          },
+          {
+            name name {
+              last "Musa",
+              first "Muawiya",
+              initials "M.A."
+            }
+          },
+          {
+            name name {
+              last "Kwaga",
+              first "Jacob",
+              initials "J.K.P."
+            }
+          },
+          {
+            name name {
+              last "Mathias",
+              first "Samuel",
+              initials "S."
+            }
+          },
+          {
+            name name {
+              last "Bautista",
+              first "Criselda",
+              initials "C."
+            }
+          },
+          {
+            name name {
+              last "Nsadzetsen",
+              first "Gilbert",
+              initials "G.A."
+            }
+          },
+          {
+            name name {
+              last "Hampson",
+              first "Katie",
+              initials "K."
+            }
+          },
+          {
+            name name {
+              last "Brunker",
+              first "Kirstyn",
+              initials "K."
+            }
+          }
+        },
+        affil std {
+          affil "Africa Center of Excellence of Neglected Tropical Diseases,
+ Ahmadu Bello University, Zaria",
+          div "Biochemistry",
+          city "Zaria",
+          sub "Kaduna",
+          country "Nigeria",
+          street "Sokoto Road",
+          postal-code "810002"
+        }
+      },
+      date std {
+        year 2024,
+        month 8,
+        day 16
+      }
+    },
+    subtype new,
+    tool "table2asn 1.28.1018"
+  },
+  data entrys {
+    set {
+      class nuc-prot,
+      descr {
+        source {
+          org {
+            taxname "Rabies lyssavirus",
+            orgname {
+              mod {
+                {
+                  subtype isolate,
+                  subname "AU52"
+                },
+                {
+                  subtype nat-host,
+                  subname "Canis familiaris"
+                }
+              }
+            }
+          },
+          subtype {
+            {
+              subtype genotype,
+              name "Rabies Virus (RABV)"
+            },
+            {
+              subtype country,
+              name "Nigeria"
+            },
+            {
+              subtype isolation-source,
+              name "Brain"
+            },
+            {
+              subtype collection-date,
+              name "2023"
+            },
+            {
+              subtype other,
+              name "NA; GenBank record generated using GLUE v1.1.113
+ (http://glue-tools.cvr.gla.ac.uk)"
+            }
+          }
+        },
+        pub {
+          pub {
+            gen {
+              cit "Unpublished",
+              authors {
+                names std {
+                  {
+                    name name {
+                      last "Ukande",
+                      first "Agatha",
+                      initials "A.S."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Kia",
+                      first "Grace",
+                      initials "G.S.N."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Musa",
+                      first "Muawiya",
+                      initials "M.A."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Mathias",
+                      first "Samuel",
+                      initials "S."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Bautista",
+                      first "Criselda",
+                      initials "C."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Ameh",
+                      first "Anthony",
+                      initials "A.O."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Nsadzetsen",
+                      first "Gilbert",
+                      initials "G.A."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Kasaragod",
+                      first "Sandeep",
+                      initials "S."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Kwaga",
+                      first "Jacob",
+                      initials "J.K.P."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Tekki",
+                      first "Ishaya",
+                      initials "I.S."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Hampson",
+                      first "Katie",
+                      initials "K."
+                    }
+                  },
+                  {
+                    name name {
+                      last "Brunker",
+                      first "Kirstyn",
+                      initials "K."
+                    }
+                  }
+                }
+              },
+              title "Whole Genome Sequencing of Rabies Virus Detected from
+ Slaughtered Dogs at Jamaa and Lere Local Government Areas of Kaduna State,
+ Nigeria."
+            }
+          }
+        },
+        user {
+          type str "StructuredComment",
+          data {
+            {
+              label str "StructuredCommentPrefix",
+              data str "##Assembly-Data-START##"
+            },
+            {
+              label str "Assembly Method",
+              data str "Guppy; minimap2; medaka"
+            },
+            {
+              label str "Sequencing Technology",
+              data str "Oxford Nanopore MinION"
+            },
+            {
+              label str "StructuredCommentSuffix",
+              data str "##Assembly-Data-END##"
+            }
+          }
+        },
+        create-date std {
+          year 2024,
+          month 8,
+          day 16
+        }
+      },
+      seq-set {
+        seq {
+          id {
+            local str "AU52"
+          },
+          descr {
+            molinfo {
+              biomol genomic
+            },
+            user {
+              type str "Submission",
+              data {
+                {
+                  label str "AdditionalComment",
+                  data str "ALT EMAIL:agathaukande@gmail.com"
+                }
+              }
+            },
+            user {
+              type str "Submission",
+              data {
+                {
+                  label str "AdditionalComment",
+                  data str "Submission Title:None"
+                }
+              }
+            }
+          },
+          inst {
+            repr raw,
+            mol rna,
+            length 11923,
+            seq-data ncbi4na 'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF482188842111
+421111184811212222812118441842241211418848188211148211811821448448882288411422
+141418818848441821181841481211181222842818211141288411411422214818112288144411
+142222241888111211142181211482148888182144218411842842211428841822841241848184
+882281888142142842418421428288841144412184822841141284412214281844118288118842
+114111444141211418212222141882828848441418211424812141818141144111284442828112
+144144818441128412414141222212148882841121842182288148244888428288414828481814
+488414211118182144121111212144211281211412111218842141824418141421418888841412
+142222888248811118848441121821812228418412112821211118484242811884414812218122
+411288224188288442244112181241218481888282224418841421828181882142818214148144
+212148148212842881841141884282844428448482488212144488218111121418111828212842
+114141142118128181888288221211411288841141141418124114118488241422144421141412
+842448822821282281888218821288224282488444828414244411482222481882482111842148
+144821848188211828218821288848844484881818444821448214482288111842412448218842
+842184842822821841418482848228144444881828144441141488888844111444212188841114
+114188288814141241111141128221141181841442142841188412411412841848442128442141
+841244112248211282841841841441881288882244841412214414822841142848881812814418
+218418411244144424128111414182821218114414181848882148214882211821821142824222
+111282188842841488828111211112181882814841282181114148841182121441882814411124
+121128848481218228821841111111281121228282288424112218222111218414211118288848
+811822414842118214142244828442241828841418442441141412848841888418211814411218
+141441211821142221828221444441122218141448441811828822241841218414424428821428
+441141244411122482211288844841418142241448444141114211481824141141288221118441
+841144141441222814228288488221182181228441211848844148221118148214121118414482
+14414141418822821111FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF14288282211411481211
+488822282214182182244418188288481811888841421488111418411228841841218148811141
+142111111848422144848412224888142221841244482211428222828414184848128444484448
+842828142811282211414188221428488148841122241211428111211148218421141841828111
+824881212182284284122111288821112821422284181412112811182241428488281118821121
+841111111214421121221284181111841188821812421141814841111128481414184144121222
+111142228282284848244222282214184124184182848442842282222224118124822242841114
+112821244421141141121841441128888481821124414114841114848421482241184488128218
+821441822842442121882841418218824124141818188224411182121411841824418814821144
+884821884412814288848214414222214822284144421841128444828121118841441411282881
+828822118444284188281414422282824144444144118844118128282114141821288444124124
+121284118884884418842111811414821484211442118482121822144421441828448481821121
+841128241414248482112818448284121848222882141212111448284144144121144128288282
+842882814118118211188181822212141288182122848881228284414414141121812444288112
+82211FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF11188118
+812288812188884142882FFF41848FF1111112818811218222821111418881144F111184488228
+284428288884488481222282884488884821284848822444111882222188812121181221412111
+288442222844142224188412181218218282142848221112118884488484414412414441842122
+112284821441888822812184411288114481441812188821422181114484118444888122842121
+442484484124414421411128818128112882482448818482122122124882144141114212888242
+228121221412424842144422424818112844114884422448412228141818411414828884212112
+221812228412818218844282241124481111122128114414822282488188181828224148484421
+418881412221818418141828288282824141482882228148444114842824444181122484822822
+122812842228122112218418812122182844184221414118224141284444121828848412182888
+482112148141444114141421828111444142114128842444888484418411141448284812114828
+281111444421842111282114281848444488282441282141288184418441121844482421184241
+121824412414122111844842228228418211881484118281218418888242821418414182411218
+288488484414414284488114114141411411848281418421281411822182184122122114821484
+148888141248282142212884144111288482222444882441114421812122181882112111122284
+18441142841842821281211482148224412284441841118218222282111144484888414148F444
+444144848218222218488212441484888888118448188181284448228418448218488281182221
+411184211821822282288214214218184414884884414822821488182228282184212222884421
+4122218211284888821144184184184144284144188884814114842182882284184FFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF22144
+284841114221482182228228121288211482884144482428882228844448814444411828884442
+884121482282222814282844184121444814288811114821241412888218811821828281884182
+141218448218481418228818118121441118288281421488821484122111448428882182282214
+411284181221114488441412144221144418188884418412222484288441212411284144884814
+822482222841848244182141144448821188414411842418884228224184114412181142118142
+821211821828842182881121114818481841881811144428441821828124288882148211411111
+112888841221141414211884421121288282182884141248224821141842824182214414144828
+184184122224884122211884148214144284148281414441288221284822211121828841411188
+284128121182821128282288811814114182284221442841848814188448841111214441181442
+282122441841222841214121188488281448288121144882841144188188821141114814182844
+488222821114844424411884214212148241841888282888448818184484222188284118241121
+411481441418421811224128841222188828188221148218222221814141112842811188481212
+8844411814144428414118222F2244F44444848811488422884111444884128124181144288824
+421448182844221181218188228218188848888822184841881222848121841184282814128444
+1841141111412218288F42488184411441888412282148441818244111441288FFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF48818121884224F4418211482284822184842441112822F
+428184114881821111818844142218184884841121422814812141444214111118821412282821
+882188222814414128822224848881811144181144841482142884114441288884482221484F11
+111448888881414882844182118824121181812184128844828824848184428488121442128444
+422182228181814188181411144482848211142818124182114822181881111114841824181148
+228122144148488814241484122814221441441822822448444418884121148128281118448182
+884188242418882884221114122122228844282288181821111282141218442212221112181824
+814128844844444181248442181442822241821222141828884141822224118241844122248214
+111822844124121148212128288821221411241412814228288442848214141181414444442284
+882221424141144881821821284222888211142242284821122221414148828811148281824122
+824444412842284124114128841811884482821112211144112414112881141824144482418888
+884228841848218441182841412848128824821821224111142828814221188121828842212888
+884184242841281841214181122841121144848821111118841884121444821284442144442888
+844128188241FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF442141144428441488844881428848811
+841814181414148282111221441121241411281141818844222114414181122144882818482241
+218181848848242214412848212144144442882828184148814111421818211411184212828241
+818122414281824114114414218281112844442841811821141144114141221848481488124128
+8828218281844411412222888488824144811218228448122841182F1111418444222414828288
+421828281184122141814881122884221181811848211214848221211184212811214844212142
+128282118288841821112241841444128882842881848214842144214828882128128848818821
+422211888811114421414828121111888841484284114444141428882882844241848241411811
+828182814182218288814444414848284441848242884441448822121812422148828244122284
+828284114448818288828441414141828442821488222114148288441822184212848422114144
+224441122244182824444141411212824141428821282422882884114182221221288841181881
+114414444221422221221828812821144184211821411144212848184184144844121144814141
+188214148821414144211822882848281111282121414181128821812828828841118214824142
+222818882222418882821484142888821488218288888844441882284148241881814442841812
+141128221441281811412442148821411141482828211411288844114148228828121128214141
+822184441811182441841242141212282141444824411444848442228428288244111444214182
+828811444111828228444411411114844844421241214882222122228214141848844448844822
+221148228221888288421288424414241224414414481122241414888214848284812822248228
+884182148218888828212414422282811144448128814428218281288221848241222142848882
+124228444111114821221184882184814841112444228818218811114148281811128448881821
+241441188221122844282141282811881441181881848282841214422284188822282814144114
+2122848888211114412144482142288421814488211182842214181214841F4444418128288284
+888422FF1122822828282181888224881F21F14121281848224128841222114124441411128184
+128821848FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFF48118144848F8114422818241841818212F8844141288282111
+828F8411888221418484821111144181822141184488FFFF44FF848422821288821111128FF284
+F818224828F1112214484188884118282811484481414111148222482121814448244282144442
+8888181882F1888814884211882184128244418121184184411211818822284881121818124421
+14482822228144412812884F444442824211414414828841814448288211818428828841211411
+841211181821121811181412282884112841828214444811828228181822822841448844184182
+122218288848181811842811414112218282881444444141828828281882222141111822214284
+288182241281211841114114441121418241888818488182822112184842842428184112414114
+8418812142182822441111241284488484418288282141288814114F4221111841248128841222
+821821228122148282182822812882111444884141441128848281111481841414221122811412
+111841428228841841412114842844484442124414144181218844148214184124121882111412
+8288411141282228124114112114484448841821141148424221842142F1411221841214444188
+181422281121441441848212481144244418488214118444888428284282112144884214818221
+288214221122214282284828214142884181811414222828221141448882111122248841828244
+428841414844882118444241284444222188121142881142281882814124182821184828822218
+282828482884814F444441844482F4444441818211444214842821121848882244184221142884
+818821121428818814144841124182841844288224481242182242812212288284211821841424
+4144141841218248282224148118141218841282118284441111122182841228414F1188844221
+218441118188822148214882111112144811121848288184122821821828484184214114821224
+121881248281821122441811282848811848224128824248848281814124412212888182844828
+821111228184411281842814841122214128121114211882112122848211444288882228214821
+214418881811282141841248218228888218214141818122822418828281112414411118888822
+414184244148122841228228221222882444141841422884848848821188481421422211141484
+141842141414282428288841188182114182884811444418882284114141881818211182288121
+124111841821811282811884121484184814118288822844882181141844814184182884148812
+111444414222848281111848281821881814221821841814888828221181444888821184888221
+112212841284182288848828182242218284122221111818841442128821121818428421421241
+841848182818281214228814424184822221428884211412882184182818121181412281881218
+12818882141114214488188241441118188812284828844148844828418412FFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFF0'H
+          },
+          annot {
+            {
+              data ftable {
+                {
+                  id local id 2,
+                  data gene {
+                    locus "N"
+                  },
+                  location int {
+                    from 70,
+                    to 1422,
+                    strand plus,
+                    id local str "AU52"
+                  },
+                  xref {
+                    {
+                      id local id 1
+                    }
+                  }
+                },
+                {
+                  id local id 4,
+                  data gene {
+                    locus "P"
+                  },
+                  location int {
+                    from 1513,
+                    to 2406,
+                    strand plus,
+                    id local str "AU52"
+                  },
+                  xref {
+                    {
+                      id local id 3
+                    }
+                  }
+                },
+                {
+                  id local id 6,
+                  data gene {
+                    locus "M"
+                  },
+                  location int {
+                    from 2495,
+                    to 3103,
+                    strand plus,
+                    id local str "AU52"
+                  },
+                  xref {
+                    {
+                      id local id 5
+                    }
+                  }
+                },
+                {
+                  id local id 8,
+                  data gene {
+                    locus "G"
+                  },
+                  partial TRUE,
+                  location int {
+                    from 3315,
+                    to 4638,
+                    strand plus,
+                    id local str "AU52",
+                    fuzz-to lim gt
+                  },
+                  xref {
+                    {
+                      id local id 7
+                    }
+                  }
+                },
+                {
+                  id local id 10,
+                  data gene {
+                    locus "L"
+                  },
+                  partial TRUE,
+                  location int {
+                    from 5408,
+                    to 11575,
+                    strand plus,
+                    id local str "AU52",
+                    fuzz-to lim gt
+                  },
+                  xref {
+                    {
+                      id local id 9
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        seq {
+          id {
+            local str "AU52_1"
+          },
+          descr {
+            title "nucleoprotein [Rabies lyssavirus]",
+            molinfo {
+              biomol peptide,
+              tech concept-trans
+            }
+          },
+          inst {
+            repr raw,
+            mol aa,
+            length 450,
+            seq-data iupacaa "MDADKIVFKVNNQVVSLKPEIIVDQYEYKYPAIKDLKKPSITLGKAPD
+LNKAYKSVLSGMNAAKLDPDDVCSYLAAAMQLFEGTCPEDWTSYGILIARKGDKITPDSLVEIKRTDIEGNWALTGGM
+ELTRDPTVSEHASLVGLLLSLYRLSKISGQNTGNYKTNIADRIEQIFETAPFVKIVEHHTLMTTHKMCANWSTIPNFR
+FLAGTYDMYFSRIEHLYSAIRVGTVVTAYEDCSGLVSFTGFIKQINLTAREAILYFFHKNFEEEIRRMFEPGQETAVP
+HSYFIHFRSLGLSGKSPYSSNAVGHVFNLIHFVGCYMGQVRSLNATVIAACAPHEMSVLGGYLGEEFFGKGTFERRFF
+RDEKELQEYEAAELTKTDVALADDGTVNSDDEDYFSGETRSPEAVYTRIMMNGGRLKRSHIRRYVSVSSNHQARPNSF
+AEFLNKTYSSDS"
+          },
+          annot {
+            {
+              data ftable {
+                {
+                  data prot {
+                    name {
+                      "nucleoprotein"
+                    }
+                  },
+                  location int {
+                    from 0,
+                    to 449,
+                    id local str "AU52_1"
+                  }
+                }
+              }
+            }
+          }
+        },
+        seq {
+          id {
+            local str "AU52_2"
+          },
+          descr {
+            title "phosphoprotein [Rabies lyssavirus]",
+            molinfo {
+              biomol peptide,
+              tech concept-trans
+            }
+          },
+          inst {
+            repr raw,
+            mol aa,
+            length 297,
+            seq-data iupacaa "MSKIFVNPSAIRAGLADLEMAEETVDLINRNIEDNQAHLQGEPIEVDN
+LPDDMRRLQLEDGKPSNFGEIAEVGESKYREDFQMDEGEDPSLLFQSYLDNVGVQIVRQMRSGERFLKXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXSFSKKYKFPSRSSGIFLYNFEQLKMNLDDIVKEAKNVPGVTRLAHDGSKLPLRCVLGWVALANSKRFQLLVEPDK
+LNKVMQDDLNRYTSC"
+          },
+          annot {
+            {
+              data ftable {
+                {
+                  data prot {
+                    name {
+                      "phosphoprotein"
+                    }
+                  },
+                  location int {
+                    from 0,
+                    to 296,
+                    id local str "AU52_2"
+                  }
+                }
+              }
+            }
+          }
+        },
+        seq {
+          id {
+            local str "AU52_3"
+          },
+          descr {
+            title "matrix protein [Rabies lyssavirus]",
+            molinfo {
+              biomol peptide,
+              tech concept-trans
+            }
+          },
+          inst {
+            repr raw,
+            mol aa,
+            length 202,
+            seq-data iupacaa "MNFIRKIVKNCRDEDTQKPSPVSAPPDDDDLWLPPPEYVPLKELTGKK
+NMRNFCINGEVKVCSPNGYSFRILRHILRSFDEIYSGNHRMIGLVKVVIGLALSGAPVPEGMNWVYKLRRTLIFQWAD
+SRGPLEGEELEYSQEITWDDDTEFVGLQIRVSARQCHIQGRIWCINMNSRACQLWSDMSLQTQRSEEDKDSSLLLE"
+          },
+          annot {
+            {
+              data ftable {
+                {
+                  data prot {
+                    name {
+                      "matrix protein"
+                    }
+                  },
+                  location int {
+                    from 0,
+                    to 201,
+                    id local str "AU52_3"
+                  }
+                }
+              }
+            }
+          }
+        },
+        seq {
+          id {
+            local str "AU52_4"
+          },
+          descr {
+            title "glycoprotein, partial [Rabies lyssavirus]",
+            molinfo {
+              biomol peptide,
+              tech concept-trans,
+              completeness no-right
+            }
+          },
+          inst {
+            repr raw,
+            mol aa,
+            length 441,
+            seq-data iupacaa "MVPLALLVVPLLVLSLCSGKFPIYTIPDKLGPWSPIDIHHLSCPNNLV
+VEDEGCTNLSGFSYMELKVGYISAIKVNGFTCTGVVTEAETYTNFVGYVTTTFRRKHFRPTPDACRAAYNWKLAGDPR
+YEESLHNPYPDYHWLRTVKTTKESLVIISPSVADLDPYDRSLLSRVFPSGKCSGITVSSTYCPTNHDYTIWMPENPRL
+GTSCDIFVNSRGKRASKGSKTCGFVDERGLYKSLKGACKLKLCGVLGLRLMDGTWVAMRTSDETKWCPPDQLVNLHDF
+RSDEIEHLVVEELVKKREECLDALESIMTTKSVSFRRLSHLRKLVPGFGKAYTIFNKTLMEADAHYKSVRTWDEIIPS
+KGCLRVGGRCHPHVHGVFFNGIILGPDGHVLIPEMQSSLLQQHMELLESSVIPLMHPLADPSTVFKDDDEAEDFVEVH
+LPD"
+          },
+          annot {
+            {
+              data ftable {
+                {
+                  data prot {
+                    name {
+                      "glycoprotein"
+                    }
+                  },
+                  partial TRUE,
+                  location int {
+                    from 0,
+                    to 440,
+                    id local str "AU52_4",
+                    fuzz-to lim gt
+                  }
+                }
+              }
+            }
+          }
+        },
+        seq {
+          id {
+            local str "AU52_5"
+          },
+          descr {
+            title "polymerase, partial [Rabies lyssavirus]",
+            molinfo {
+              biomol peptide,
+              tech concept-trans,
+              completeness no-right
+            }
+          },
+          inst {
+            repr raw,
+            mol aa,
+            length 2056,
+            seq-data iupacaa "MLDPGEVYDDPVDPIESEAESRGTSTVPNILRNSDYNLNSPLIEDPAR
+LMLDWLKTGNRPHRMTLTDNCSRSYKVLKDYFKKVDLGSLKVGGIAAQSMISLWLYGAHSESNRSRRCITDLTHFYSK
+SSPIEKLLNCTLGNRGLRIPPXGVLSCLERVDYDKAFGRYLANTYSSYLFFHVITLYMNALDWDEEKTIXALWKDLTS
+VDIGKDXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXLYIA
+XDQVLSMCGNSXYEVIKILEPYVVNSLVQRAEKFRPLIHSLGDFPVFIKDKVSQLEGTFGPSXKRFFRVLDQFDNIHD
+LVFVYGCYRHWGHPYIDYRKGLSKLYDQVHIKKVIDKSYQECLASDLARRILRWGFDKYSKWYLDSRFLAKDHPLAPY
+IKTQTWPPKHIVDLVGDTWHRLPITQIFEIPESMDPSEILDDKSHSFTRTRLASWLSENRGGPVPSEKVIITALSKPP
+VNPREFLKSIDLGGLPDEDLIIGLKPKERELKIEGRFFALMSWNLRLYFVITEKLLANYILPLFDALTMTDNLNKVFK
+KLIDRVTGQGLLDYSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXQKGWSLVSLLMIDRESQTRNTRTKILAQGDNQVLCPTYMLSPGLSQEGLLY
+ELESISRNALSIYRAIEEGASKLGLIIKKEETMCSYDFLIYGKTPLFRGNILVPESKRWARVSCISNDQIVNLANIMS
+TVSTNALTVAQHSQSLIKPMRDFLLMSVQAVFHYLLFSPILKGRVYKILSAEGESFLLAMSRIIYLDPSLGGVSGMSL
+GRFHIRQFSDPVSEGLSFWREIWLSSQESWIHALCQEAGNPDLGERTLESFTRLLEDPTTLNIKGGASPTILLKDAIR
+KALYDEVDKVENSEFREAILLSKTHRDNFILFLKSVEPLFPRFLSELFSSSFLGIPESIIGLIQNSRTIRRQFRKSLS
+RTLEESFYNSEIHGINRMTQTPQRVGRVWPCSSERADLLREISWGRKVVGTTVPHPSEMLGLVPKSSISCTCGATGGG
+NPRVSVSVLPSFDQSFFSRGPLKGYLGSSTSMSTQLFHAWEKVTNVHVVKRALSLKESINWFITRNSNLAQTLIRNIM
+SLTGPDFPLEEAPVFKRTGSALHRFKSARYSXGGYSSVCXNLLSHISVXXDTMSDLTQDGRNYDFMXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXNRCXRPIDDITLETSQIXEFPDVSKRISRMVXXXVPHFQKLXXIRLKPGDFESLSGR
+EKSRHIGSAQGLLYSILVAIHDSGYNDGTIFPVNIYGKVSPRDYLXGLARGVLIGSSICFLTRMTNININRPLELISG
+VISYILLRLDDHPSLYIMLREPSLRGEIFSIPQKIPAAYPTTMKEGNRSILCYLQHVLRYEREVITASPENDWLWIFS
+DFRXAKMTYLTLITYQSHLLLQRVERNLSKSMRANLRQMSSLMRQVLGGHGEDTLESDDDIQRLLKDSLRRTRWVDQE
+VRHAARTMTGDYSPNRRMSRKAGCSEWVCSAQQVAVSTSANPAPVSELDIRALSKRFQNPLISGLRVVQWATGAHYKL
+KPILDDLNVFPSLCLVXGDGSGGISRAVLNMFPDAKLVFNSLLEVNDLMASGTHPLPPSAIMSGGDDIVSRVIDIDSI
+WEKPSDLXNLATWKYFQSVQKQVNMSYDLIICDAEVTDITSINRITLLMSDFALSIDGPLYLVFKTYGTMLVNPDYKA
+IQHLSRAFPSVTGFITQMTSSFSSEIYLRFSKRGKFFRDAEYLTSSTLREMSLVLFNCSSPKSEMQRARSLNYQDLVR
+GFPEEIISNPYNEMIITLIDSDVESFLVHKMVDDLELQRGALSKMSIIIAIMIVFSNRVFNVSKPLTDPLFYPPSDPK
+ILRHFNICCSTMMYLSTALGDVPSFARLHDLYNRPITYYFRKQVIRGNIYLSWSWSDD"
+          },
+          annot {
+            {
+              data ftable {
+                {
+                  data prot {
+                    name {
+                      "polymerase"
+                    }
+                  },
+                  partial TRUE,
+                  location int {
+                    from 0,
+                    to 2055,
+                    id local str "AU52_5",
+                    fuzz-to lim gt
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      annot {
+        {
+          data ftable {
+            {
+              id local id 1,
+              data cdregion {
+                frame one,
+                code {
+                  id 1
+                }
+              },
+              product whole local str "AU52_1",
+              location int {
+                from 70,
+                to 1422,
+                strand plus,
+                id local str "AU52"
+              },
+              xref {
+                {
+                  data gene {
+                    locus "N"
+                  }
+                },
+                {
+                  id local id 2
+                }
+              }
+            },
+            {
+              id local id 3,
+              data cdregion {
+                frame one,
+                code {
+                  id 1
+                }
+              },
+              product whole local str "AU52_2",
+              location int {
+                from 1513,
+                to 2406,
+                strand plus,
+                id local str "AU52"
+              },
+              xref {
+                {
+                  data gene {
+                    locus "P"
+                  }
+                },
+                {
+                  id local id 4
+                }
+              }
+            },
+            {
+              id local id 5,
+              data cdregion {
+                frame one,
+                code {
+                  id 1
+                }
+              },
+              product whole local str "AU52_3",
+              location int {
+                from 2495,
+                to 3103,
+                strand plus,
+                id local str "AU52"
+              },
+              xref {
+                {
+                  data gene {
+                    locus "M"
+                  }
+                },
+                {
+                  id local id 6
+                }
+              }
+            },
+            {
+              id local id 7,
+              data cdregion {
+                frame one,
+                code {
+                  id 1
+                }
+              },
+              partial TRUE,
+              product whole local str "AU52_4",
+              location int {
+                from 3315,
+                to 4638,
+                strand plus,
+                id local str "AU52",
+                fuzz-to lim gt
+              },
+              xref {
+                {
+                  data gene {
+                    locus "G"
+                  }
+                },
+                {
+                  id local id 8
+                }
+              }
+            },
+            {
+              id local id 9,
+              data cdregion {
+                frame one,
+                code {
+                  id 1
+                }
+              },
+              partial TRUE,
+              product whole local str "AU52_5",
+              location int {
+                from 5408,
+                to 11575,
+                strand plus,
+                id local str "AU52",
+                fuzz-to lim gt
+              },
+              xref {
+                {
+                  data gene {
+                    locus "L"
+                  }
+                },
+                {
+                  id local id 10
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

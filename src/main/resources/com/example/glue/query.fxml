@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="511.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.glue.HelloController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="135.0" prefHeight="363.0" prefWidth="1050.0">
+        <columns>
+          <TableColumn fx:id="column1" prefWidth="102.0" text="Sequence_id" />
+          <TableColumn fx:id="column2" prefWidth="111.0" text="GB_create_date" />
+            <TableColumn fx:id="column3" prefWidth="109.0" text="GB_update_date" />
+            <TableColumn fx:id="column4" prefWidth="73.0" text="GB_length" />
+            <TableColumn fx:id="column5" prefWidth="60.0" text="Isolate" />
+            <TableColumn fx:id="column6" prefWidth="90.0" text="GB_country" />
+            <TableColumn fx:id="column7" prefWidth="61.0" text="Host" />
+            <TableColumn fx:id="column8" prefWidth="115.0" text="Collection_year" />
+            <TableColumn fx:id="column9" prefWidth="101.0" text="Pubmed" />
+            <TableColumn fx:id="column10" prefWidth="75.0" text="MADDOG_lineage" />
+            <TableColumn fx:id="column11" prefWidth="75.0" text="Major_clade" />
+            <TableColumn fx:id="column12" prefWidth="75.0" text="Minor_clade" />
+        </columns>
+      </TableView>
+      <Label fx:id="totalEntriesOnTable" layoutX="20.0" layoutY="92.0" prefHeight="17.0" prefWidth="192.0" text="Total Entries: " />
+      <ComboBox fx:id="viewSequences" layoutX="16.0" layoutY="15.0" onAction="#showQuery" prefHeight="25.0" prefWidth="206.0" />
+      <ComboBox fx:id="viewClades" layoutX="18.0" layoutY="50.0" onAction="#handleComboBoxClade" prefHeight="25.0" prefWidth="96.0" />
+      <ComboBox fx:id="viewSubClades" layoutX="131.0" layoutY="50.0" onAction="#handleComboBoxSubClade" prefHeight="25.0" prefWidth="90.0" />
+      <Button fx:id="launchFilter" layoutX="256.0" layoutY="15.0" mnemonicParsing="false" onAction="#launchFilter" prefHeight="25.0" prefWidth="107.0" text="Filter" />
+      <TextArea fx:id="filtersApplied" layoutX="258.0" layoutY="52.0" prefHeight="73.0" prefWidth="542.0" promptText="Filters Applied: " />
+      <Button fx:id="queryTextBox" layoutX="811.0" layoutY="63.0" mnemonicParsing="false" onAction="#queryTextBox" prefHeight="25.0" prefWidth="107.0" text="Query textbox" />
+      <Button fx:id="downloadMetaData" layoutX="377.0" layoutY="15.0" mnemonicParsing="false" onAction="#downloadMetaData" prefHeight="25.0" prefWidth="145.0" text="Download meta data" />
+   </children>
+</AnchorPane>

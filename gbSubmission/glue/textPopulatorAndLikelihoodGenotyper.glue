@@ -1,0 +1,3 @@
+import source "/Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/test_data/genbank_submission/fasta-seq"
+module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'fasta-seq'" -f /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/test_data/genbank_submission/tabular.tsv
+module rabvMaxLikelihoodGenotyper genotype sequence -w "source.name = 'fasta-seq'"

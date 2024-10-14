@@ -1,0 +1,5 @@
+#Module	ExecutionMode
+CreateGbSubmission	Multiple
+rabvMaxLikelihoodGenotyper	Single
+rabvMaxLikelihoodGenotyperWithOutputExtracted	Single
+rabvSequenceReporter	Single

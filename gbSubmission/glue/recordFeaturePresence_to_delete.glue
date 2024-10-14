@@ -1,0 +1,12 @@
+
+  module rabvFeaturePresenceRecorder 
+
+    #record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'batch-2021'" --featureName whole_genome --descendentFeatures
+    #record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'batch-2022'" --featureName whole_genome --descendentFeatures
+    #record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'batch-2023'" --featureName whole_genome --descendentFeatures
+		#record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'peru-fasta-sequences'" --featureName whole_genome --descendentFeatures
+    #record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'peru-fasta-sequence-update'" --featureName whole_genome --descendentFeatures
+		#record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'test-batch'" --featureName whole_genome --descendentFeatures
+		#record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'fasta-seq'" --featureName whole_genome --descendentFeatures
+		record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'fasta-seq_single'" --featureName whole_genome --descendentFeatures
+exit

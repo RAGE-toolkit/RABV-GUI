@@ -1,0 +1,49 @@
+<textFilePopulator>
+	<columnDelimiterRegex>\t</columnDelimiterRegex>
+	
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>FastaID</header>
+		<property>sequenceID</property>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>sample_id</header>
+		<property>isolate</property>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>isolation_source</header>
+		<property>iso_source</property>
+	</textFileColumn>
+	
+    <textFileColumn>
+        <header>country</header>
+        <property>gb_country</property>
+    </textFileColumn>
+    
+    <textFileColumn>
+        <header>place_sampled</header>
+        <property>gb_place_sampled</property>
+    </textFileColumn>
+	
+	<textFileColumn>
+		<header>host_species</header>
+		<property>host</property>
+		<!-- don't match "unknown", so return null in this case -->
+		<matchPattern>^(?!.*unknown).*$</matchPattern>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>collection_year</header>
+		<property>collection_year</property>
+		<!-- don't match "unknown", so return null in this case -->
+		<matchPattern>^(?!.*unknown).*$</matchPattern>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>notes</header>
+		<property>rabv_submission_gb_notes</property>
+	</textFileColumn>
+	
+</textFilePopulator>

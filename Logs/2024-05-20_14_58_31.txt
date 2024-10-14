@@ -1,0 +1,6 @@
+Usage: 
+  gluetools [-c <c-file>] -v
+  gluetools [-c <c-file>] -h
+  gluetools [-c <c-file>] [-p <c-opt>]... [-mECO] [-i <word>...]
+  gluetools [-c <c-file>] [-p <c-opt>]... [-nmECO] -f <b-file>
+

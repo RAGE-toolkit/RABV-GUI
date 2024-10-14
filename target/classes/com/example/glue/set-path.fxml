@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.glue.HelloController">
+   <children>
+      <Label layoutX="14.0" layoutY="41.0" text="Gluetools path" />
+      <Label layoutX="17.0" layoutY="90.0" text="Gluetools config path" />
+      <!-- onAction="#glueCloseButton" -->
+      <Button fx:id="glueSettingsCloseButton" layoutX="383.0" onAction="#glueSettingsCloseButton" layoutY="201.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="Close" />
+      <TextArea fx:id="gluePath" layoutX="106.0" layoutY="29.0" onDragDetected="#browseGluePath" prefHeight="39.0" prefWidth="292.0" />
+      <TextArea fx:id="glueConfigPath" layoutX="139.0" layoutY="78.0" prefHeight="41.0" prefWidth="258.0" />
+      <Button fx:id="browseGluePath" layoutX="408.0" layoutY="29.0" onAction="#browseGluePath" prefHeight="39.0" prefWidth="66.0" text="Browse" />
+      <Button fx:id="browseGlueConfig" layoutX="408.0" layoutY="77.0" mnemonicParsing="false" onAction="#browseGlueConfig" prefHeight="39.0" prefWidth="66.0" text="Browse" />
+      <Label layoutX="17.0" layoutY="137.0" text="Database" />
+      <TextArea fx:id="glueDatabase" layoutX="105.0" layoutY="128.0" prefHeight="41.0" prefWidth="292.0" />
+      <Button fx:id="browseGlueDb" layoutX="408.0" layoutY="129.0" mnemonicParsing="false" onAction="#browseGlueDb" prefHeight="39.0" prefWidth="66.0" text="Browse" />
+      <Button fx:id="glueSaveSetting" layoutX="216.0" layoutY="202.0" mnemonicParsing="false" onAction="#glueSaveSetting" prefHeight="26.0" prefWidth="143.0" text="Save settings" />
+   </children>
+</AnchorPane>

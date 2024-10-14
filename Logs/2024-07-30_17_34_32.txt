@@ -1,0 +1,181 @@
+17:33:24.790 DatabaseConfiguration WARNING: The 'vendor' config element is deprecated as of GLUE 1.1.6 or later.
+17:33:24.791 DatabaseConfiguration WARNING: You can safely remove the <vendor> element MySQL as of GLUE 1.1.6 or later
+GLUE Version 1.1.113
+Copyright (C) 2015-2020 The University of Glasgow
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you
+are welcome to redistribute it under certain conditions. For details see
+GNU Affero General Public License v3: http://www.gnu.org/licenses/
+
+Mode path: /
+GLUE> schema-project rabv
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/deleteSubmissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> delete field rabv_submission_gb_notes
+OK
+(1 Field deleted)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/submissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> create field rabv_submission_gb_notes VARCHAR
+OK
+(1 Field created)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> exit
+OK
+Mode path: /
+GLUE> project rabv
+OK
+Mode path: /project/rabv
+GLUE> delete module --whereClause "name like '%Submission%'"
+OK
+(9 Modules deleted)
+Mode path: /project/rabv
+GLUE> delete module rabvMafftAligner
+OK
+(1 Module deleted)
+Mode path: /project/rabv
+GLUE> delete source fasta-seq_single
+OK
+(1 Source deleted)
+Mode path: /project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionModules.glue
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvMafftAligner.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionBlastFastaAlignmentImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaAlignmentExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionRaxmlPhylogenyGenerator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloUtility.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionMetadataTextFilePopulator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionNexusExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionGenerator.xml
+OK
+(1 Module created)
+OK
+Mode path: /project/rabv
+GLUE> import source /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing/fasta-seq_single
++=============================+==================+============+================+
+|          filePath           |    sourceName    | sequenceID | sequenceFormat |
++=============================+==================+============+================+
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU02       | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
++=============================+==================+============+================+
+
+Mode path: /project/rabv
+GLUE> module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'fasta-seq_single'" -f /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing/tabular_single.tsv
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU02       | isolate                  | AU02             |
+| fasta-seq_single | AU02       | iso_source               | Brain            |
+| fasta-seq_single | AU02       | gb_country               | Nigeria          |
+| fasta-seq_single | AU02       | gb_place_sampled         | Lere             |
+| fasta-seq_single | AU02       | host                     | Canis familiaris |
+| fasta-seq_single | AU02       | collection_year          | 2023             |
+| fasta-seq_single | AU02       | rabv_submission_gb_notes | NA               |
++==================+============+==========================+==================+
+
+Mode path: /project/rabv
+GLUE> module rabvMaxLikelihoodGenotyper genotype sequence -w "source.name = 'fasta-seq_single'"
++=======================+=======================+=======================+
+|       queryName       | major_cladeFinalClade | minor_cladeFinalClade |
++=======================+=======================+=======================+
+| fasta-seq_single/AU02 | AL_Africa-2           | -                     |
++=======================+=======================+=======================+
+
+Mode path: /project/rabv
+GLUE> module rabvMaxLikelihoodPlacer
+OK
+Mode path: /project/rabv/module/rabvMaxLikelihoodPlacer
+GLUE> place sequence -w "source.name = 'fasta-seq_single'" --outputFile gbSubmission/placements/placements.xml
+OK
+Mode path: /project/rabv/module/rabvMaxLikelihoodPlacer
+GLUE> exit
+OK
+Mode path: /project/rabv
+GLUE> run script /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionAddSequencesToAlmtTree.js
+17:34:23.683 NashornJsScript INFO: genotypingResultObjs : [object Object]
+OK
+Mode path: /project/rabv
+GLUE> module rabvFeaturePresenceRecorder
+OK
+Mode path: /project/rabv/module/rabvFeaturePresenceRecorder
+GLUE> record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'fasta-seq_single'" --featureName whole_genome --descendentFeatures
++============+============+============+============+============+=============+
+|member.align|member.seque|member.seque|featureLoc.r|featureLoc.f|referenceNtCo|
+| ment.name  |nce.source.n|nce.sequence|eferenceSequ|eature.name |   verage    |
+|            |    ame     |     ID     | ence.name  |            |             |
++============+============+============+============+============+=============+
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|whole_genome|92.1220248072|
+|            |ngle        |            |C_001542    |            |4103         |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|G           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|L           |91.7716596671|
+|            |ngle        |            |C_001542    |            |333          |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|M           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|N           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|P           |69.4630872483|
+|            |ngle        |            |C_001542    |            |2215         |
++============+============+============+============+============+=============+
+
+Mode path: /project/rabv/module/rabvFeaturePresenceRecorder
+GLUE> exit
+OK
+Mode path: /project/rabv
+GLUE> module rabvSubmissionGenerator generate-sqn -w "source.name = 'fasta-seq_single'" -t /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing/template.sbt -o /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing/SQN_files
+Error tracing:
+
+[/Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/mac.table2asn, -indir, /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/tmp/tbl2asn/98f8292c-cda6-4dcb-969b-c2b7b5a8a774, -t, /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/tmp/tbl2asn/98f8292c-cda6-4dcb-969b-c2b7b5a8a774/template.sbt, -w, /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/tmp/tbl2asn/98f8292c-cda6-4dcb-969b-c2b7b5a8a774/structuredComments.cmt, -a, r50u, -l, align-genus]
+uk.ac.gla.cvr.gluetools.utils.ProcessUtils$ProcessResult@51a69e8f
++==================+============+==============================================+
+|   source.name    | sequenceID |                   filePath                   |
++==================+============+==============================================+
+| fasta-seq_single | AU02       |/Users/sandeep.kasaragod/IdeaProjects/Glue_290|
+|                  |            |7...                                          |
++==================+============+==============================================+
+
+Mode path: /project/rabv
+GLUE> validate
+17:34:32.460 MaxLikelihoodGenotyper WARNING: Module 'rabvMaxLikelihoodGenotyper' of type maxLikelihoodGenotyper: consider setting <useSingleReference> to true, to avoid the bias towards clades with more references defined.
+OK
+Mode path: /project/rabv
+GLUE> Exception in thread "main" java.lang.RuntimeException: Unrecognized line type
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleLine(Console.java:167)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleInteractiveLine(Console.java:131)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.interactiveSession(Console.java:530)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.access$800(Console.java:96)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:419)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:409)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.runWithGlueClassloader(GluetoolsEngine.java:294)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:409)
+

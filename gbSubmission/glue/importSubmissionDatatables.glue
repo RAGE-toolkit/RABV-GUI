@@ -1,0 +1,6 @@
+  # metadata
+  #module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'batch-2017'" -f tabular/batch-2017/batch-2017.tsv  # Tanzania
+  #module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'batch-2019'" -f tabular/batch-2019/batch-2019.tsv  # East Africa
+  #module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'batch-2021'" -f tabular/batch-2021/batch-2021.tsv  # Philippines
+  #module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'batch-2022'" -f tabular/batch-2022/batch-2022.tsv  # Rowan EA
+  module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'batch-2023'" -f tabular/batch-2022/batch-2023.tsv  # Rowan EA

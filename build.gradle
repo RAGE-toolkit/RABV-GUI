@@ -1,0 +1,43 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "21"  // Latest version as of Java 18, adjust if a newer compatible version is available for JDK 21
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    // Adjust the main class name to your project's main class
+    mainClassName = 'com.example.glue.HelloApplication'
+}
+
+dependencies {
+    // Define dependencies here
+    // Example: Use Log4j for logging capabilities
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.14.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.14.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
+}
+
+java {
+    // Set source and target compatibility for your JDK
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+// This task bundles the application with all its dependencies into a single runnable Jar (Fat Jar)
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'com.example.glue.HelloApplication'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}

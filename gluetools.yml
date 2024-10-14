@@ -7,5 +7,5 @@ dependencies:
   - java-jdk=8.0.45
   - blast=2.2.31
   - mafft
-  - raxml
+  - raxml=8.2.13
   - table2asn

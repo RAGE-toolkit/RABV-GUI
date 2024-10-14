@@ -1,0 +1,8 @@
+
+  # Import the FASTA formatted sequences
+  #import source sources/batch-2017  # Tanzania
+  #import source sources/batch-2017  # East Africa
+  #import source sources/batch-2021  # Philippines
+  #import source sources/batch-2022  # East Africa
+   import source sources/batch-2023  # East Africa
+

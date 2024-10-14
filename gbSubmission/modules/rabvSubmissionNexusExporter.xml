@@ -1,0 +1,39 @@
+<nexusExporter>
+	<freemarkerAnnotationGenerator>
+		<annotationName>sequenceID</annotationName>
+		<template>${renderNestedProperty('sequence.sequenceID')}</template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>source</annotationName>
+		<template>${renderNestedProperty('sequence.source.name')}</template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>source_plus_sequenceID</annotationName>
+		<template>${renderNestedProperty('sequence.source.name')}/${renderNestedProperty('sequence.sequenceID')}</template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>sourceColourKey</annotationName>
+		<template><![CDATA[<#if renderNestedProperty('sequence.source.name') = 'ncbi-curated'>2<#else>1</#if>]]></template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>country</annotationName>
+		<template>${renderNestedProperty('sequence.m49_country.display_name')}</template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>minorClade</annotationName>
+		<template>${renderNestedProperty('sequence.minor_clade')}</template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>country_minorClade</annotationName>
+		<template>${renderNestedProperty('sequence.m49_country.display_name')}/${renderNestedProperty('sequence.minor_clade')}</template>
+	</freemarkerAnnotationGenerator>
+
+
+	<figtreeProperty type="integer" name="tipLabels.fontSize">13</figtreeProperty>
+	<figtreeProperty name="tipLabels.displayAttribute">sequenceID</figtreeProperty>
+	<figtreeProperty name="tipLabels.colorAttribute">sourceColourKey</figtreeProperty>
+	<figtreeProperty type="integer" name="nodeLabels.fontSize">13</figtreeProperty>
+	<figtreeProperty type="boolean" name="nodeLabels.isShown">true</figtreeProperty>
+	<figtreeProperty name="nodeLabels.displayAttribute">bootstraps</figtreeProperty>
+	<figtreeProperty type="boolean" name="nodeLabels.isShown">true</figtreeProperty>
+</nexusExporter>

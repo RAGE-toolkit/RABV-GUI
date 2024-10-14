@@ -1,0 +1,2 @@
+   delete module --whereClause "name like '%Submission%'"
+   delete module rabvMafftAligner

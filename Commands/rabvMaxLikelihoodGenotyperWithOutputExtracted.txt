@@ -1,0 +1,2 @@
+#translate the P gene of this sequence to amino acids
+module rabvMaxLikelihoodGenotyper genotype file --fileName {fastaFile} --documentResult --dataDir {outputDir}

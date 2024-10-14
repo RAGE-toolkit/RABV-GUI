@@ -1,0 +1,640 @@
+12:40:24.254 DatabaseConfiguration WARNING: The 'vendor' config element is deprecated as of GLUE 1.1.6 or later.
+12:40:24.277 DatabaseConfiguration WARNING: You can safely remove the <vendor> element MySQL as of GLUE 1.1.6 or later
+GLUE Version 1.1.113
+Copyright (C) 2015-2020 The University of Glasgow
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you
+are welcome to redistribute it under certain conditions. For details see
+GNU Affero General Public License v3: http://www.gnu.org/licenses/
+
+Mode path: /
+GLUE> schema-project rabv
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/deleteSubmissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> delete field rabv_submission_gb_notes
+OK
+(1 Field deleted)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/submissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> create field rabv_submission_gb_notes VARCHAR
+OK
+(1 Field created)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> exit
+OK
+Mode path: /
+GLUE> project rabv
+OK
+Mode path: /project/rabv
+GLUE> delete module --whereClause "name like '%Submission%'"
+OK
+(9 Modules deleted)
+Mode path: /project/rabv
+GLUE> delete module rabvMafftAligner
+OK
+(1 Module deleted)
+Mode path: /project/rabv
+GLUE> delete source fasta
+OK
+(1 Source deleted)
+Mode path: /project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionModules.glue
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvMafftAligner.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionBlastFastaAlignmentImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaAlignmentExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionRaxmlPhylogenyGenerator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloUtility.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionMetadataTextFilePopulator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionNexusExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionGenerator.xml
+OK
+(1 Module created)
+OK
+Mode path: /project/rabv
+GLUE> import source /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Essel/fasta
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4A-22-203     | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-37      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-39      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-41      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-42      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-44      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-45      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-01      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-02      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 1 to 9 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-03      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-04      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-05      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-06      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-07      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-11      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-12      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-13      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-15      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 10 to 18 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4A-22-203     | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-37      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-39      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-41      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-42      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-44      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-22-45      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-01      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-02      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 1 to 9 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-16      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-17      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-19      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | H-23-011Sk_12 | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-14-098      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-17-046      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-18-224      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-103      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-119      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 19 to 27 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-03      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-04      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-05      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-06      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-07      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-11      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-12      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-13      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-15      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 10 to 18 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-16      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-17      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-19      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | H-23-011Sk_12 | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-14-098      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-17-046      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-18-224      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-103      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-119      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 19 to 27 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-16      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-17      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-19      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | H-23-011Sk_12 | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-14-098      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-17-046      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-18-224      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-103      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-119      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 19 to 27 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-16      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-17      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | 4B-23-19      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | H-23-011Sk_12 | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-14-098      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-17-046      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-18-224      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-103      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-119      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+Rows 19 to 27 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
++================================+============+===============+================+
+|            filePath            | sourceName |  sequenceID   | sequenceFormat |
++================================+============+===============+================+
+|/Users/sandeep.kasaragod/IdeaPro| fasta      | Z-22-121      | FASTA          |
+|jects/Glue_2907...              |            |               |                |
++================================+============+===============+================+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rows 28 to 28 of 28 [F:first, L:last, P:prev, N:next, Q:quit]
+Mode path: /project/rabv
+GLUE> uence -w "source.name = 'fasta'" --outputFile gbSubmission/placements/placements.xml
+Error: No command could be formed from "uence -w source.name = 'fasta' --outputFile gbSubmission/placements/placements.xml" in mode path /project/rabv
+Mode path: /project/rabv
+GLUE> exit
+OK
+Mode path: /
+GLUE> run script /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionAddSequencesToAlmtTree.js
+Error: GlueError: Unknown mode path: module/rabvMaxLikelihoodGenotyper
+Line 189 of <eval>: 	at pushMode (<eval>:189)
+	at inMode (<eval>:177)
+	at <program> (/Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionAddSequencesToAlmtTree.js:3)
+Cause: Unknown mode path: module/rabvMaxLikelihoodGenotyper
+Mode path: /
+GLUE> run file gbSubmission/glue/recordFeaturePresence.glue
+GLUE> module rabvFeaturePresenceRecorder
+Exception at line 1 of gbSubmission/glue/recordFeaturePresence.glue
+Error: No command could be formed from "module rabvFeaturePresenceRecorder" in mode path /
+Mode path: /
+GLUE> module rabvSubmissionGenerator generate-sqn -w "source.name = 'fasta'" -t /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Essel/template-philippines-2021.sbt -o /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Essel/SQN_files
+Error: No command could be formed from "module rabvSubmissionGenerator generate-sqn -w source.name = 'fasta' -t /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Essel/template-philippines-2021.sbt -o /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/Essel/SQN_files" in mode path /
+Mode path: /
+GLUE> validate
+Error: No command could be formed from "validate" in mode path /
+Mode path: /
+GLUE> exit
+OK
+

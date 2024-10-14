@@ -1,0 +1,4 @@
+module rabvMaxLikelihoodPlacer
+	place sequence -w "source.name = 'fasta-seq_single'" --outputFile gbSubmission/placements/agatha-2024_placements.xml
+exit
+  

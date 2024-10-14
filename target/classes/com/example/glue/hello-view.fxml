@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.glue.HelloController">
+   <children>
+      <MenuBar fx:id="menuBar" layoutY="1.0" prefHeight="27.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#menuClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Settings">
+              <items>
+                <MenuItem fx:id="launchSetPath" mnemonicParsing="false" onAction="#launchSetPath" text="Set glue and DB" />
+                  <MenuItem fx:id="importSQL" mnemonicParsing="false" onAction="#importSQL" text="Import SQL" />
+                  <MenuItem fx:id="loadDB" mnemonicParsing="false" onAction="#loadDB" text="LoadDB" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="menuAbout" mnemonicParsing="false" onAction="#menuAbout" text="About" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="cmdOutput" layoutX="12.0" layoutY="531.0" prefHeight="161.0" prefWidth="884.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="531.0" />
+      <Button fx:id="cmdExecute" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#cmdExecute" prefHeight="25.0" prefWidth="69.0" text="Run" />
+      <Label layoutX="27.0" layoutY="45.0" text="Load Project" />
+      <Label layoutX="31.0" layoutY="149.0" text="Load Fasta" />
+      <Button fx:id="browseFasta" layoutX="508.0" layoutY="141.0" mnemonicParsing="false" onAction="#browseFasta" prefHeight="28.0" prefWidth="69.0" text="Browse" />
+      <ComboBox fx:id="loadPrj" layoutX="138.0" layoutY="41.0" prefHeight="25.0" prefWidth="353.0" />
+      <TextArea fx:id="browseFastaPath" layoutX="139.0" layoutY="135.0" prefHeight="26.0" prefWidth="353.0" promptText="Load Fasta file" />
+      <Label layoutX="28.0" layoutY="89.0" text="Select function" />
+      <ComboBox fx:id="loadModule" layoutX="139.0" layoutY="85.0" onAction="#updateModuleStatus" prefHeight="25.0" prefWidth="353.0" />
+      <TextArea fx:id="browseSbtPath" layoutX="138.0" layoutY="257.0" prefHeight="42.0" prefWidth="353.0" />
+      <Label layoutX="20.0" layoutY="263.0" text="Load template (.sbt)" />
+      <Button fx:id="browseTemplate" layoutX="505.0" layoutY="264.0" mnemonicParsing="false" onAction="#browseTemplate" prefHeight="28.0" prefWidth="69.0" text="Browse" />
+      <Label layoutX="20.0" layoutY="390.0" text="Output directory" />
+      <TextArea fx:id="browseOutputPath" layoutX="140.0" layoutY="379.0" prefHeight="41.0" prefWidth="353.0" />
+      <Button fx:id="browseOutput" layoutX="507.0" layoutY="384.0" mnemonicParsing="false" onAction="#browseOutput" prefHeight="28.0" prefWidth="69.0" text="Browse" />
+      <TextArea fx:id="browseTabularPath" layoutX="138.0" layoutY="320.0" prefHeight="41.0" prefWidth="353.0" />
+      <Label layoutX="22.0" layoutY="328.0" text="Load tabular file" />
+      <Button fx:id="browseTabular" layoutX="507.0" layoutY="325.0" mnemonicParsing="false" onAction="#browseTabular" prefHeight="28.0" prefWidth="69.0" text="Browse" />
+      <Label layoutX="34.0" layoutY="205.0" text="Load Fasta dir" />
+      <TextArea fx:id="browseFastaDirPath" layoutX="140.0" layoutY="194.0" prefHeight="41.0" prefWidth="353.0" />
+      <Button fx:id="browseFastDir" layoutX="509.0" layoutY="202.0" mnemonicParsing="false" onAction="#browseFastaDir" prefHeight="26.0" prefWidth="69.0" text="Browse" />
+      <Button fx:id="launchQuery" layoutX="520.0" layoutY="458.0" mnemonicParsing="false" onAction="#launchQuery" prefHeight="26.0" prefWidth="77.0" text="Query" />
+   </children>
+</AnchorPane>

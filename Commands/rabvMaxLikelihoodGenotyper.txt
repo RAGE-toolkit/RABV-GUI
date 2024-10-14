@@ -1,0 +1,2 @@
+#assign a major and minor cladde for a sequence in a FASTA file
+module rabvMaxLikelihoodGenotyper genotype file --fileName {fastaFile}

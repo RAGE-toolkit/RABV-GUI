@@ -1,0 +1,45 @@
+schema-project rabv
+
+run file glue/deleteSubmissionSchemaExtensions.glue
+run file glue/submissionSchemaExtensions.glue
+exit
+
+project rabv
+
+# Delete modules
+run file glue/rabvSubmissionDeleteModules.glue
+  delete source batch-2023
+  delete source batch-2024
+
+# Create modules
+run file glue/rabvSubmissionModules.glue
+
+
+# Import the FASTA-formatted sequences and tabular-formatted metadata
+
+#import source sources/batch-2023  # East Africa
+import source sources/batch-2024
+  module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'batch-2024'" -f tabular/batch-2024/batch-2024.tsv  # Rowan EA
+
+# Do genotyping
+module rabvMaxLikelihoodGenotyper genotype sequence -w "source.name = 'batch-2024'"
+
+# Update placements
+run file glue/rabvSubmissionGeneratePlacements.glue
+
+# add the new sequences to RABV-GLUE's 'alignment tree' data structure.
+# and extend the alignments therein - adding homology segments for new members.
+# this process depends on an up-to-date placement file, which can be regenerated using glue/rabvSubmissionGeneratePlacements.glue
+  run script glue/rabvSubmissionAddSequencesToAlmtTree.js
+
+
+
+# Record feature presence
+  run file glue/recordFeaturePresence.glue
+
+# Generate the submission files
+  module rabvSubmissionGenerator2024 generate-sqn -w "source.name = 'batch-2024'" -t template/submission_template_speedier.sbt -o gb/batch-2024
+
+  validate
+
+  exit

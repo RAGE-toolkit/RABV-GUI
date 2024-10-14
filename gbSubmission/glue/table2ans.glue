@@ -1,0 +1,1 @@
+module rabvSubmissionGenerator generate-sqn -w "source.name = 'fasta-seq'" -t /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/test_data/genbank_submission/template.sbt -o /Users/sandeep.kasaragod/Documents/GitHub/GLUE-GUI-build/glue-gui-v1/tmp

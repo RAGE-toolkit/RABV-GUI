@@ -1,0 +1,3 @@
+module rabvFeaturePresenceRecorder
+record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'fasta-seq'" --featureName whole_genome --descendentFeatures
+exit

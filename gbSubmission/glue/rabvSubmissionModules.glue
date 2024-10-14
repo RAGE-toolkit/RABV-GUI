@@ -1,0 +1,12 @@
+  create module --fileName gbSubmission/modules/rabvSubmissionFastaImporter.xml
+  create module --fileName gbSubmission/modules/rabvMafftAligner.xml
+  create module --fileName gbSubmission/modules/rabvSubmissionBlastFastaAlignmentImporter.xml
+  create module --fileName gbSubmission/modules/rabvSubmissionFastaAlignmentExporter.xml
+  create module --fileName gbSubmission/modules/rabvSubmissionRaxmlPhylogenyGenerator.xml
+  create module --fileName gbSubmission/modules/rabvSubmissionPhyloUtility.xml
+  create module --fileName gbSubmission/modules/rabvSubmissionPhyloImporter.xml
+
+  create module --fileName gbSubmission/modules/rabvSubmissionMetadataTextFilePopulator.xml 
+  create module --fileName gbSubmission/modules/rabvSubmissionNexusExporter.xml
+	
+	create module --fileName gbSubmission/modules/rabvSubmissionGenerator.xml

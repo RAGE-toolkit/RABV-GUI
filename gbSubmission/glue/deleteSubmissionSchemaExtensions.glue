@@ -1,0 +1,3 @@
+table sequence
+  delete field rabv_submission_gb_notes
+  exit

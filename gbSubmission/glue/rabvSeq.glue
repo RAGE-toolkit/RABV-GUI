@@ -1,0 +1,2 @@
+module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'fasta-seq_single'" -f glue_testing-1/tabular_single.tsv
+module rabvMaxLikelihoodGenotyper genotype sequence -w "source.name = 'fasta-seq_single'"

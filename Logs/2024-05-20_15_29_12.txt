@@ -1,0 +1,130 @@
+15:29:12.035 DatabaseConfiguration WARNING: The 'vendor' config element is deprecated as of GLUE 1.1.6 or later.
+15:29:12.037 DatabaseConfiguration WARNING: You can safely remove the <vendor> element MySQL as of GLUE 1.1.6 or later
+Mon May 20 15:29:12 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.init(GluetoolsEngine.java:220)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.initInstance(GluetoolsEngine.java:78)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.init(Console.java:506)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:403)
+
+
+** END NESTED EXCEPTION **
+
+
+GLUE> project rabv
+OK
+Mon May 20 15:29:12 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.command.project.ProjectMode.exit(ProjectMode.java:70)
+	at uk.ac.gla.cvr.gluetools.core.command.CommandContext.popCommandMode(CommandContext.java:177)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.runBatchCommands(Console.java:679)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.runInlineCommand(Console.java:648)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.access$600(Console.java:96)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:416)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:409)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.runWithGlueClassloader(GluetoolsEngine.java:294)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:409)
+
+
+** END NESTED EXCEPTION **
+
+
+Mon May 20 15:29:12 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.dispose(GluetoolsEngine.java:254)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.shutdown(GluetoolsEngine.java:235)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.shutdown(Console.java:627)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:427)
+
+
+** END NESTED EXCEPTION **
+
+
+

@@ -1,0 +1,388 @@
+14:55:27.370 DatabaseConfiguration WARNING: The 'vendor' config element is deprecated as of GLUE 1.1.6 or later.
+14:55:27.371 DatabaseConfiguration WARNING: You can safely remove the <vendor> element MySQL as of GLUE 1.1.6 or later
+Mon Jul 29 14:55:27 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.init(GluetoolsEngine.java:220)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.initInstance(GluetoolsEngine.java:78)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.init(Console.java:506)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:403)
+
+
+** END NESTED EXCEPTION **
+
+
+GLUE Version 1.1.113
+Copyright (C) 2015-2020 The University of Glasgow
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you
+are welcome to redistribute it under certain conditions. For details see
+GNU Affero General Public License v3: http://www.gnu.org/licenses/
+
+Mode path: /
+GLUE> schema-project rabv
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/deleteSubmissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> delete field rabv_submission_gb_notes
+Mon Jul 29 14:55:28 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.datamodel.builder.ModelBuilder.deleteFieldFromModel(ModelBuilder.java:821)
+	at uk.ac.gla.cvr.gluetools.core.command.root.projectschema.table.DeleteFieldCommand.deleteField(DeleteFieldCommand.java:83)
+	at uk.ac.gla.cvr.gluetools.core.command.root.projectschema.table.DeleteFieldCommand.execute(DeleteFieldCommand.java:73)
+	at uk.ac.gla.cvr.gluetools.core.command.root.projectschema.table.DeleteFieldCommand.execute(DeleteFieldCommand.java:51)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:268)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:209)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleLine(Console.java:183)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.runBatchCommands(Console.java:666)
+	at uk.ac.gla.cvr.gluetools.core.command.console.ConsoleCommandContext.runBatchCommands(ConsoleCommandContext.java:338)
+	at uk.ac.gla.cvr.gluetools.core.command.console.RunFileCommand.execute(RunFileCommand.java:80)
+	at uk.ac.gla.cvr.gluetools.core.command.console.RunFileCommand.execute(RunFileCommand.java:44)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:268)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:209)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleLine(Console.java:183)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleInteractiveLine(Console.java:131)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.interactiveSession(Console.java:530)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.access$800(Console.java:96)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:419)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:409)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.runWithGlueClassloader(GluetoolsEngine.java:294)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:409)
+
+
+** END NESTED EXCEPTION **
+
+
+OK
+(1 Field deleted)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/submissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> create field rabv_submission_gb_notes VARCHAR
+Mon Jul 29 14:55:28 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.datamodel.builder.ModelBuilder.addFieldToModel(ModelBuilder.java:620)
+	at uk.ac.gla.cvr.gluetools.core.command.root.projectschema.table.CreateFieldCommand.execute(CreateFieldCommand.java:91)
+	at uk.ac.gla.cvr.gluetools.core.command.root.projectschema.table.CreateFieldCommand.execute(CreateFieldCommand.java:46)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:268)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:209)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleLine(Console.java:183)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.runBatchCommands(Console.java:666)
+	at uk.ac.gla.cvr.gluetools.core.command.console.ConsoleCommandContext.runBatchCommands(ConsoleCommandContext.java:338)
+	at uk.ac.gla.cvr.gluetools.core.command.console.RunFileCommand.execute(RunFileCommand.java:80)
+	at uk.ac.gla.cvr.gluetools.core.command.console.RunFileCommand.execute(RunFileCommand.java:44)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:268)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:209)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleLine(Console.java:183)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleInteractiveLine(Console.java:131)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.interactiveSession(Console.java:530)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.access$800(Console.java:96)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:419)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:409)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.runWithGlueClassloader(GluetoolsEngine.java:294)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:409)
+
+
+** END NESTED EXCEPTION **
+
+
+OK
+(1 Field created)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> exit
+OK
+Mode path: /
+GLUE> project rabv
+OK
+Mode path: /project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionDeleteModules.glue
+GLUE> delete module --whereClause "name like '%Submission%'"
+OK
+(9 Modules deleted)
+GLUE> delete module rabvMafftAligner
+OK
+(1 Module deleted)
+OK
+Mode path: /project/rabv
+GLUE> delete source fasta-seq
+OK
+(1 Source deleted)
+Mode path: /project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionModules.glue
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvMafftAligner.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionBlastFastaAlignmentImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaAlignmentExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionRaxmlPhylogenyGenerator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloUtility.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionMetadataTextFilePopulator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionNexusExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionGeneratorAgatha2024.xml
+OK
+(1 Module created)
+OK
+Mode path: /project/rabv
+GLUE> import source /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/Agatha/fasta-seq
++===================================+============+============+================+
+|             filePath              | sourceName | sequenceID | sequenceFormat |
++===================================+============+============+================+
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU02       | FASTA          |
+|rojects/glue...                    |            |            |                |
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU104      | FASTA          |
+|rojects/glue...                    |            |            |                |
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU179      | FASTA          |
+|rojects/glue...                    |            |            |                |
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU18       | FASTA          |
+|rojects/glue...                    |            |            |                |
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU205      | FASTA          |
+|rojects/glue...                    |            |            |                |
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU50       | FASTA          |
+|rojects/glue...                    |            |            |                |
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU51       | FASTA          |
+|rojects/glue...                    |            |            |                |
+|/Users/sandeep.kasaragod/task_dir/p| fasta-seq  | AU52       | FASTA          |
+|rojects/glue...                    |            |            |                |
++===================================+============+============+================+
+
+Mode path: /project/rabv
+GLUE> module rabvSubmissionMetadataTextFilePopulator populate -w source.name = 'fasta-seq' -f /Users/sandeep.kasaragod/task_dir/projects/gluetools/bin/Agatha/tabular.tsv
+Error: Invalid path = starting from table sequence: No link or field is named '=' in table sequence
+Mode path: /project/rabv
+GLUE> module rabvMaxLikelihoodGenotyper genotype sequence -w source.name = 'fasta-seq
+Error: Syntax error at position 69
+Mode path: /project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionGeneratePlacements.glue
+GLUE> module rabvMaxLikelihoodPlacer
+OK
+GLUE> #place sequence -w "source.name = 'batch-2017'" --outputFile placements/batch-2017_placements.xml
+GLUE> #place sequence -w "source.name = 'batch-2019'" --outputFile placements/batch-2019_placements.xml
+GLUE> #place sequence -w "source.name = 'batch-2021'" --outputFile placements/batch-2021_placements.xml
+GLUE> #place sequence -w "source.name = 'batch-2022'" --outputFile placements/batch-2022_placements.xml  
+GLUE> #place sequence -w "source.name = 'batch-2023'" --outputFile placements/batch-2023_placements.xml 
+GLUE> #place sequence -w "source.name = 'batch-2024'" --outputFile placements/batch-2024_placements.xml
+GLUE> #place sequence -w "source.name = 'test-batch'" --outputFile placements/test-batch_placements.xml
+GLUE> #place sequence -w "source.name = 'peru-fasta-sequences'" --outputFile placements/peru-batch-2024_placements.xml
+GLUE> #place sequence -w "source.name = 'peru-fasta-sequence-update'" --outputFile placements/peru-sequence-update-batch-2024_placements.xml
+GLUE> #place sequence -w "source.name = 'fasta-seq'" --outputFile placements/gilbert-2024_placements.xml
+GLUE> place sequence -w "source.name = 'fasta-seq'" --outputFile placements/agatha-2024_placements.xml
+Exception at line 13 of /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionGeneratePlacements.glue
+Error: File creation error for /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/placements/agatha-2024_placements.xml: No such file or directory
+Cause: No such file or directory
+Mode path: /project/rabv
+GLUE> run script /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionAddSequencesToAlmtTree.js
+Mon Jul 29 14:55:56 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.command.project.ProjectMode.exit(ProjectMode.java:70)
+	at uk.ac.gla.cvr.gluetools.core.command.CommandContext.popCommandMode(CommandContext.java:177)
+	at uk.ac.gla.cvr.gluetools.core.command.CommandContext.dispose(CommandContext.java:321)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.shutdown(Console.java:626)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:427)
+
+
+** END NESTED EXCEPTION **
+
+
+Mon Jul 29 14:55:56 BST 2024 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:844)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:822)
+	at com.mysql.cj.protocol.a.NativeProtocol.quit(NativeProtocol.java:1312)
+	at com.mysql.cj.NativeSession.quit(NativeSession.java:182)
+	at com.mysql.cj.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:1750)
+	at com.mysql.cj.jdbc.ConnectionImpl.close(ConnectionImpl.java:720)
+	at org.apache.cayenne.conn.PooledConnectionImpl.close(PooledConnectionImpl.java:110)
+	at org.apache.cayenne.conn.PoolManager.shutdown(PoolManager.java:207)
+	at org.apache.cayenne.conn.PoolManager.beforeScopeEnd(PoolManager.java:233)
+	at org.apache.cayenne.configuration.server.DelegatingDataSourceFactory.shutdown(DelegatingDataSourceFactory.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.cayenne.di.spi.ScopeEventBinding.onScopeEvent(ScopeEventBinding.java:61)
+	at org.apache.cayenne.di.spi.DefaultScope.postScopeEvent(DefaultScope.java:145)
+	at org.apache.cayenne.di.spi.DefaultScope.shutdown(DefaultScope.java:75)
+	at org.apache.cayenne.di.spi.DefaultInjector.shutdown(DefaultInjector.java:138)
+	at org.apache.cayenne.configuration.CayenneRuntime.shutdown(CayenneRuntime.java:166)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.dispose(GluetoolsEngine.java:254)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.shutdown(GluetoolsEngine.java:235)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.shutdown(Console.java:627)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:427)
+
+
+** END NESTED EXCEPTION **
+
+
+Exception in thread "main" java.lang.NoClassDefFoundError: jdk/nashorn/api/scripting/NashornException
+	at uk.ac.gla.cvr.gluetools.core.command.CommandContext.getNashornContext(CommandContext.java:327)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.runScript(Console.java:855)
+	at uk.ac.gla.cvr.gluetools.core.command.console.ConsoleCommandContext.runScript(ConsoleCommandContext.java:365)
+	at uk.ac.gla.cvr.gluetools.core.command.console.RunScriptCommand.execute(RunScriptCommand.java:71)
+	at uk.ac.gla.cvr.gluetools.core.command.console.RunScriptCommand.execute(RunScriptCommand.java:44)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:268)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.executeTokenStrings(Console.java:209)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleLine(Console.java:183)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleInteractiveLine(Console.java:131)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.interactiveSession(Console.java:530)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.access$800(Console.java:96)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:419)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:409)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.runWithGlueClassloader(GluetoolsEngine.java:294)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:409)
+Caused by: java.lang.ClassNotFoundException: jdk.nashorn.api.scripting.NashornException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 15 more
+

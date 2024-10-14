@@ -1,0 +1,457 @@
+17:01:11.241 DatabaseConfiguration WARNING: The 'vendor' config element is deprecated as of GLUE 1.1.6 or later.
+17:01:11.267 DatabaseConfiguration WARNING: You can safely remove the <vendor> element MySQL as of GLUE 1.1.6 or later
+GLUE Version 1.1.113
+Copyright (C) 2015-2020 The University of Glasgow
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you
+are welcome to redistribute it under certain conditions. For details see
+GNU Affero General Public License v3: http://www.gnu.org/licenses/
+
+Mode path: /
+GLUE> schema-project rabv
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/deleteSubmissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> delete field rabv_submission_gb_notes
+OK
+(1 Field deleted)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/submissionSchemaExtensions.glue
+GLUE> table sequence
+OK
+GLUE> create field rabv_submission_gb_notes VARCHAR
+OK
+(1 Field created)
+GLUE> exit
+OK
+OK
+Mode path: /schema-project/rabv
+GLUE> exit
+OK
+Mode path: /
+GLUE> project rabv
+OK
+Mode path: /project/rabv
+GLUE> delete module --whereClause "name like '%Submission%'"
+OK
+(9 Modules deleted)
+Mode path: /project/rabv
+GLUE> delete module rabvMafftAligner
+OK
+(1 Module deleted)
+Mode path: /project/rabv
+GLUE> delete source fasta-seq_single
+OK
+(1 Source deleted)
+Mode path: /project/rabv
+GLUE> run file /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionModules.glue
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvMafftAligner.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionBlastFastaAlignmentImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionFastaAlignmentExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionRaxmlPhylogenyGenerator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloUtility.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionPhyloImporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionMetadataTextFilePopulator.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionNexusExporter.xml
+OK
+(1 Module created)
+GLUE> create module --fileName gbSubmission/modules/rabvSubmissionGenerator.xml
+OK
+(1 Module created)
+OK
+Mode path: /project/rabv
+GLUE> import source /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing-1/fasta-seq_single
++=============================+==================+============+================+
+|          filePath           |    sourceName    | sequenceID | sequenceFormat |
++=============================+==================+============+================+
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU02       | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU104      | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU179      | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU18       | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU205      | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU50       | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU51       | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
+|/Users/sandeep.kasaragod/Idea| fasta-seq_single | AU52       | FASTA          |
+|Projects/Glue_2907...        |                  |            |                |
++=============================+==================+============+================+
+
+Mode path: /project/rabv
+GLUE> module rabvSubmissionMetadataTextFilePopulator populate -w "source.name = 'fasta-seq_single'" -f /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing-1/tabular_single.tsv
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU02       | isolate                  | AU02             |
+| fasta-seq_single | AU02       | iso_source               | Brain            |
+| fasta-seq_single | AU02       | gb_country               | Nigeria          |
+| fasta-seq_single | AU02       | gb_place_sampled         | Lere             |
+| fasta-seq_single | AU02       | host                     | Canis familiaris |
+| fasta-seq_single | AU02       | collection_year          | 2023             |
+| fasta-seq_single | AU02       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU18       | isolate                  | AU18             |
+| fasta-seq_single | AU18       | iso_source               | Brain            |
+| fasta-seq_single | AU18       | gb_country               | Nigeria          |
+| fasta-seq_single | AU18       | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU18       | host                     | Canis familiaris |
+| fasta-seq_single | AU18       | collection_year          | 2023             |
+| fasta-seq_single | AU18       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU50       | isolate                  | AU50             |
+| fasta-seq_single | AU50       | iso_source               | Brain            |
+| fasta-seq_single | AU50       | gb_country               | Nigeria          |
+| fasta-seq_single | AU50       | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU50       | host                     | Canis familiaris |
++==================+============+==========================+==================+
+Rows 1 to 19 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU104      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU104      | host                     | Canis familiaris |
+| fasta-seq_single | AU104      | collection_year          | 2023             |
+| fasta-seq_single | AU104      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU179      | isolate                  | AU179            |
+| fasta-seq_single | AU179      | iso_source               | Brain            |
+| fasta-seq_single | AU179      | gb_country               | Nigeria          |
+| fasta-seq_single | AU179      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU179      | host                     | Canis familiaris |
+| fasta-seq_single | AU179      | collection_year          | 2023             |
+| fasta-seq_single | AU179      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU205      | isolate                  | AU205            |
+| fasta-seq_single | AU205      | iso_source               | Brain            |
+| fasta-seq_single | AU205      | gb_country               | Nigeria          |
+| fasta-seq_single | AU205      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU205      | host                     | Canis familiaris |
+| fasta-seq_single | AU205      | collection_year          | 2023             |
+| fasta-seq_single | AU205      | rabv_submission_gb_notes | NA               |
++==================+============+==========================+==================+
+
+Rows 39 to 56 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU104      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU104      | host                     | Canis familiaris |
+| fasta-seq_single | AU104      | collection_year          | 2023             |
+| fasta-seq_single | AU104      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU179      | isolate                  | AU179            |
+| fasta-seq_single | AU179      | iso_source               | Brain            |
+| fasta-seq_single | AU179      | gb_country               | Nigeria          |
+| fasta-seq_single | AU179      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU179      | host                     | Canis familiaris |
+| fasta-seq_single | AU179      | collection_year          | 2023             |
+| fasta-seq_single | AU179      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU205      | isolate                  | AU205            |
+| fasta-seq_single | AU205      | iso_source               | Brain            |
+| fasta-seq_single | AU205      | gb_country               | Nigeria          |
+| fasta-seq_single | AU205      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU205      | host                     | Canis familiaris |
+| fasta-seq_single | AU205      | collection_year          | 2023             |
+| fasta-seq_single | AU205      | rabv_submission_gb_notes | NA               |
++==================+============+==========================+==================+
+
+Rows 39 to 56 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU104      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU104      | host                     | Canis familiaris |
+| fasta-seq_single | AU104      | collection_year          | 2023             |
+| fasta-seq_single | AU104      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU179      | isolate                  | AU179            |
+| fasta-seq_single | AU179      | iso_source               | Brain            |
+| fasta-seq_single | AU179      | gb_country               | Nigeria          |
+| fasta-seq_single | AU179      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU179      | host                     | Canis familiaris |
+| fasta-seq_single | AU179      | collection_year          | 2023             |
+| fasta-seq_single | AU179      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU205      | isolate                  | AU205            |
+| fasta-seq_single | AU205      | iso_source               | Brain            |
+| fasta-seq_single | AU205      | gb_country               | Nigeria          |
+| fasta-seq_single | AU205      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU205      | host                     | Canis familiaris |
+| fasta-seq_single | AU205      | collection_year          | 2023             |
+| fasta-seq_single | AU205      | rabv_submission_gb_notes | NA               |
++==================+============+==========================+==================+
+
+Rows 39 to 56 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU104      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU104      | host                     | Canis familiaris |
+| fasta-seq_single | AU104      | collection_year          | 2023             |
+| fasta-seq_single | AU104      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU179      | isolate                  | AU179            |
+| fasta-seq_single | AU179      | iso_source               | Brain            |
+| fasta-seq_single | AU179      | gb_country               | Nigeria          |
+| fasta-seq_single | AU179      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU179      | host                     | Canis familiaris |
+| fasta-seq_single | AU179      | collection_year          | 2023             |
+| fasta-seq_single | AU179      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU205      | isolate                  | AU205            |
+| fasta-seq_single | AU205      | iso_source               | Brain            |
+| fasta-seq_single | AU205      | gb_country               | Nigeria          |
+| fasta-seq_single | AU205      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU205      | host                     | Canis familiaris |
+| fasta-seq_single | AU205      | collection_year          | 2023             |
+| fasta-seq_single | AU205      | rabv_submission_gb_notes | NA               |
++==================+============+==========================+==================+
+
+Rows 39 to 56 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU50       | collection_year          | 2023             |
+| fasta-seq_single | AU50       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU51       | isolate                  | AU51             |
+| fasta-seq_single | AU51       | iso_source               | Brain            |
+| fasta-seq_single | AU51       | gb_country               | Nigeria          |
+| fasta-seq_single | AU51       | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU51       | host                     | Canis familiaris |
+| fasta-seq_single | AU51       | collection_year          | 2023             |
+| fasta-seq_single | AU51       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU52       | isolate                  | AU52             |
+| fasta-seq_single | AU52       | iso_source               | Brain            |
+| fasta-seq_single | AU52       | gb_country               | Nigeria          |
+| fasta-seq_single | AU52       | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU52       | host                     | Canis familiaris |
+| fasta-seq_single | AU52       | collection_year          | 2023             |
+| fasta-seq_single | AU52       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU104      | isolate                  | AU105            |
+| fasta-seq_single | AU104      | iso_source               | Brain            |
+| fasta-seq_single | AU104      | gb_country               | Nigeria          |
++==================+============+==========================+==================+
+Rows 20 to 38 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU104      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU104      | host                     | Canis familiaris |
+| fasta-seq_single | AU104      | collection_year          | 2023             |
+| fasta-seq_single | AU104      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU179      | isolate                  | AU179            |
+| fasta-seq_single | AU179      | iso_source               | Brain            |
+| fasta-seq_single | AU179      | gb_country               | Nigeria          |
+| fasta-seq_single | AU179      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU179      | host                     | Canis familiaris |
+| fasta-seq_single | AU179      | collection_year          | 2023             |
+| fasta-seq_single | AU179      | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU205      | isolate                  | AU205            |
+| fasta-seq_single | AU205      | iso_source               | Brain            |
+| fasta-seq_single | AU205      | gb_country               | Nigeria          |
+| fasta-seq_single | AU205      | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU205      | host                     | Canis familiaris |
+| fasta-seq_single | AU205      | collection_year          | 2023             |
+| fasta-seq_single | AU205      | rabv_submission_gb_notes | NA               |
++==================+============+==========================+==================+
+
+Rows 39 to 56 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
++==================+============+==========================+==================+
+|    sourceName    | sequenceID |         property         |      value       |
++==================+============+==========================+==================+
+| fasta-seq_single | AU50       | collection_year          | 2023             |
+| fasta-seq_single | AU50       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU51       | isolate                  | AU51             |
+| fasta-seq_single | AU51       | iso_source               | Brain            |
+| fasta-seq_single | AU51       | gb_country               | Nigeria          |
+| fasta-seq_single | AU51       | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU51       | host                     | Canis familiaris |
+| fasta-seq_single | AU51       | collection_year          | 2023             |
+| fasta-seq_single | AU51       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU52       | isolate                  | AU52             |
+| fasta-seq_single | AU52       | iso_source               | Brain            |
+| fasta-seq_single | AU52       | gb_country               | Nigeria          |
+| fasta-seq_single | AU52       | gb_place_sampled         | Jama�a           |
+| fasta-seq_single | AU52       | host                     | Canis familiaris |
+| fasta-seq_single | AU52       | collection_year          | 2023             |
+| fasta-seq_single | AU52       | rabv_submission_gb_notes | NA               |
+| fasta-seq_single | AU104      | isolate                  | AU105            |
+| fasta-seq_single | AU104      | iso_source               | Brain            |
+| fasta-seq_single | AU104      | gb_country               | Nigeria          |
++==================+============+==========================+==================+
+Rows 20 to 38 of 56 [F:first, L:last, P:prev, N:next, Q:quit]
+Mode path: /project/rabv
+GLUE> uence -w "source.name = 'fasta-seq_single'"
+Error: No command could be formed from "uence -w source.name = 'fasta-seq_single'" in mode path /project/rabv
+Mode path: /project/rabv
+GLUE> module rabvMaxLikelihoodPlacer
+OK
+Mode path: /project/rabv/module/rabvMaxLikelihoodPlacer
+GLUE> place sequence -w "source.name = 'fasta-seq_single'" --outputFile gbSubmission/placements/placements.xml
+OK
+Mode path: /project/rabv/module/rabvMaxLikelihoodPlacer
+GLUE> exit
+OK
+Mode path: /project/rabv
+GLUE> run script /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/gbSubmission/glue/rabvSubmissionAddSequencesToAlmtTree.js
+17:01:49.748 NashornJsScript INFO: genotypingResultObjs : [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+OK
+Mode path: /project/rabv
+GLUE> module rabvFeaturePresenceRecorder
+OK
+Mode path: /project/rabv/module/rabvFeaturePresenceRecorder
+GLUE> record feature-presence AL_MASTER --recursive --whereClause "sequence.source.name = 'fasta-seq_single'" --featureName whole_genome --descendentFeatures
++============+============+============+============+============+=============+
+|member.align|member.seque|member.seque|featureLoc.r|featureLoc.f|referenceNtCo|
+| ment.name  |nce.source.n|nce.sequence|eferenceSequ|eature.name |   verage    |
+|            |    ame     |     ID     | ence.name  |            |             |
++============+============+============+============+============+=============+
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|whole_genome|92.1220248072|
+|            |ngle        |            |C_001542    |            |4103         |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|G           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|L           |91.7716596671|
+|            |ngle        |            |C_001542    |            |333          |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|M           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|N           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU02        |REF_MASTER_N|P           |69.4630872483|
+|            |ngle        |            |C_001542    |            |2215         |
+|AL_MASTER   |fasta-seq_si|AU104       |REF_MASTER_N|whole_genome|36.6409654710|
+|            |ngle        |            |C_001542    |            |02346        |
+|AL_MASTER   |fasta-seq_si|AU104       |REF_MASTER_N|G           |67.4285714285|
+|            |ngle        |            |C_001542    |            |7143         |
++============+============+============+============+============+=============+
+
+Rows 1 to 8 of 43 [F:first, L:last, P:prev, N:next, Q:quit]
++============+============+============+============+============+=============+
+|member.align|member.seque|member.seque|featureLoc.r|featureLoc.f|referenceNtCo|
+| ment.name  |nce.source.n|nce.sequence|eferenceSequ|eature.name |   verage    |
+|            |    ame     |     ID     | ence.name  |            |             |
++============+============+============+============+============+=============+
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|M           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|N           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|P           |69.4630872483|
+|            |ngle        |            |C_001542    |            |2215         |
++============+============+============+============+============+=============+
+
+
+
+
+
+
+
+
+
+
+
+Rows 41 to 43 of 43 [F:first, L:last, P:prev, N:next, Q:quit]
++============+============+============+============+============+=============+
+|member.align|member.seque|member.seque|featureLoc.r|featureLoc.f|referenceNtCo|
+| ment.name  |nce.source.n|nce.sequence|eferenceSequ|eature.name |   verage    |
+|            |    ame     |     ID     | ence.name  |            |             |
++============+============+============+============+============+=============+
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|M           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|N           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|P           |69.4630872483|
+|            |ngle        |            |C_001542    |            |2215         |
++============+============+============+============+============+=============+
+
+
+
+
+
+
+
+
+
+
+
+Rows 41 to 43 of 43 [F:first, L:last, P:prev, N:next, Q:quit]
++============+============+============+============+============+=============+
+|member.align|member.seque|member.seque|featureLoc.r|featureLoc.f|referenceNtCo|
+| ment.name  |nce.source.n|nce.sequence|eferenceSequ|eature.name |   verage    |
+|            |    ame     |     ID     | ence.name  |            |             |
++============+============+============+============+============+=============+
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|M           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|N           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|P           |69.4630872483|
+|            |ngle        |            |C_001542    |            |2215         |
++============+============+============+============+============+=============+
+
+
+
+
+
+
+
+
+
+
+
+Rows 41 to 43 of 43 [F:first, L:last, P:prev, N:next, Q:quit]
++============+============+============+============+============+=============+
+|member.align|member.seque|member.seque|featureLoc.r|featureLoc.f|referenceNtCo|
+| ment.name  |nce.source.n|nce.sequence|eferenceSequ|eature.name |   verage    |
+|            |    ame     |     ID     | ence.name  |            |             |
++============+============+============+============+============+=============+
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|M           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|N           |100.0        |
+|            |ngle        |            |C_001542    |            |             |
+|AL_MASTER   |fasta-seq_si|AU52        |REF_MASTER_N|P           |69.4630872483|
+|            |ngle        |            |C_001542    |            |2215         |
++============+============+============+============+============+=============+
+
+
+
+
+
+
+
+
+
+
+
+Rows 41 to 43 of 43 [F:first, L:last, P:prev, N:next, Q:quit]
+Mode path: /project/rabv/module/rabvFeaturePresenceRecorder
+GLUE> n -w "source.name = 'fasta-seq_single'" -t /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing-1/template.sbt -o /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing-1/SQN_files
+Error: No command could be formed from "n -w source.name = 'fasta-seq_single' -t /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing-1/template.sbt -o /Users/sandeep.kasaragod/IdeaProjects/Glue_29072024/glue_testing-1/SQN_files" in mode path /project/rabv/module/rabvFeaturePresenceRecorder
+Mode path: /project/rabv/module/rabvFeaturePresenceRecorder
+GLUE> validate
+OK
+Mode path: /project/rabv/module/rabvFeaturePresenceRecorder
+GLUE> Exception in thread "main" java.lang.RuntimeException: Unrecognized line type
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleLine(Console.java:167)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.handleInteractiveLine(Console.java:131)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.interactiveSession(Console.java:530)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.access$800(Console.java:96)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:419)
+	at uk.ac.gla.cvr.gluetools.core.console.Console$1.get(Console.java:409)
+	at uk.ac.gla.cvr.gluetools.core.GluetoolsEngine.runWithGlueClassloader(GluetoolsEngine.java:294)
+	at uk.ac.gla.cvr.gluetools.core.console.Console.main(Console.java:409)
+

@@ -1,0 +1,1 @@
+module rabvSequenceReporter amino-acid -i {fastaFile} -r REF_MASTER_NC_001542 -f P -t REF_Cosmopolitan_AF1b_KX148208
