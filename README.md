@@ -1,7 +1,7 @@
 RABV-GUI is a graphical user interface designed for running RABV-GLUE, specifically to facilitate GenBank submissions for rabies sequences. In addition to supporting GenBank submissions, RABV-GUI has been updated with the latest rabies sequences and can perform database queries similar to those available on the RABV-GLUE website (http://rabv-glue.cvr.gla.ac.uk/).
 
 # Installation
-GLUE_GUI is developed in Java, so having Java installed is essential. We recommend using Conda to run RABV-GUI, which makes the installation process simple. For ease of installation, the install.sh script performs the following tasks:
+RABV-GUI is developed in Java, so having Java installed is essential. We recommend using Conda to run RABV-GUI, which makes the installation process simple. For ease of installation, the install.sh script performs the following tasks:
 - Install curl if it does not exist
 - Install Conda/miniforge if it does not exist
 - Create an environment gluetools (which contains RAxML, BLAST, MAFFT, TBLASTN)
