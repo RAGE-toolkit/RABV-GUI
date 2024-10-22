@@ -67,16 +67,23 @@ The successful installation will launch the RABV-GUI.
 The first time GUI launch will require few things to be setup such as path of the gluetools jar file and its configuration files.
 
 #### Setting up the glue and path
-goto-->settings-->Set glue and DB --> browse the gluetools jar and configuration files from gluetoos_jar_file directory with the RABV-GUI. Refer below image for better understanding.
+goto-->settings-->Set glue and DB --> browse the gluetools jar, configuration and DB files from glue_jar_file directory. Refer below image for better understanding.
 ![Alt text](img/setdb.png)
 
+#### Importing SQL data
+goto-->settings-->Import SQL. This will load the SQL file to the local mySQL system.
+
+#### Load DB
+This step is essential, whenever you want to perform any analysis, the DB needs to be loaded.
 
 ## Running the analysis
 At this moment, RABV-GUI provides two functions. 1) maxLikeHoodGenotyper and 2) genBankSubmission. 
 
-maxLikeHoodGenotyper requires rabies fasta file to tell which alignment the sequence belongs. 
+maxLikeHoodGenotyper requires rabies fasta file to tell which alignment/clade the sequence belongs. The image below shows  
+![Alt text](img/maxliklyhood.png)
 
 genBankSubmission function, generates the GenBank sequence submission files (*.SQN). It uses the latest table2asn tool to generate the SQN files. It requires fasta file directory, submission template and tabular file as an input to generate the SQN files.
+![Alt text](img/gbsubmission.png)
 
 Directory named test_data provides the data necessary to run the GenBank submission test. Also the maxLikeHoodGenotyper can be tested by uploading fasta file available on test_data/fasta-seq directory. 
 
