@@ -67,7 +67,9 @@ The successful installation will launch the RABV-GUI.
 The first time GUI launch will require few things to be setup such as path of the gluetools jar file and its configuration files.
 
 #### Setting up the glue and path
-goto-->settings-->Set glue and DB --> browse the gluetools jar and configuration files from gluetoos_jar_file directory with the RABV-GUI
+goto-->settings-->Set glue and DB --> browse the gluetools jar and configuration files from gluetoos_jar_file directory with the RABV-GUI. Refer below image for better understanding.
+![Alt text](img/setdb.png)
+
 
 ## Running the analysis
 At this moment, RABV-GUI provides two functions. 1) maxLikeHoodGenotyper and 2) genBankSubmission. 
