@@ -78,8 +78,8 @@ This step is essential, whenever you want to perform any analysis, the DB needs 
 
 ## Running the analysis
 At this moment, RABV-GUI provides two functions. 
-- 1) maxLikeHoodGenotyper
-- 2) genBankSubmission. 
+- maxLikeHoodGenotyper
+- genBankSubmission
 
 maxLikeHoodGenotyper requires rabies fasta file to tell which alignment/clade the sequence belongs. The image below shows running the maxLikeHoodGenotyper
 
