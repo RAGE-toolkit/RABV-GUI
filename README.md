@@ -79,10 +79,12 @@ This step is essential, whenever you want to perform any analysis, the DB needs 
 ## Running the analysis
 At this moment, RABV-GUI provides two functions. 1) maxLikeHoodGenotyper and 2) genBankSubmission. 
 
-maxLikeHoodGenotyper requires rabies fasta file to tell which alignment/clade the sequence belongs. The image below shows  
+maxLikeHoodGenotyper requires rabies fasta file to tell which alignment/clade the sequence belongs. The image below shows running the maxLikeHoodGenotyper
+
 ![Alt text](img/maxliklyhood.png)
 
 genBankSubmission function, generates the GenBank sequence submission files (*.SQN). It uses the latest table2asn tool to generate the SQN files. It requires fasta file directory, submission template and tabular file as an input to generate the SQN files.
+
 ![Alt text](img/gbsubmission.png)
 
 Directory named test_data provides the data necessary to run the GenBank submission test. Also the maxLikeHoodGenotyper can be tested by uploading fasta file available on test_data/fasta-seq directory. 
