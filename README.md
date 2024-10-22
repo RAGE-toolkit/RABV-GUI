@@ -89,7 +89,7 @@ genBankSubmission function, generates the GenBank sequence submission files (*.S
 
 ![Alt text](img/gbsubmission.png)
 
-Directory named **test_data** provides the data necessary to run the GenBank submission test. Also the maxLikeHoodGenotyper can be tested by uploading fasta file available on test_data/fasta-seq directory. 
+Directory named **test_data** provides the necessary test datasets to run the GenBank submission. Also the maxLikeHoodGenotyper can be tested by uploading fasta file available on test_data/fasta-seq directory. 
 
 
 
