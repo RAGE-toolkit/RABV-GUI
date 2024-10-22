@@ -77,7 +77,9 @@ goto-->settings-->Import SQL. This will load the SQL file to the local mySQL sys
 This step is essential, whenever you want to perform any analysis, the DB needs to be loaded.
 
 ## Running the analysis
-At this moment, RABV-GUI provides two functions. 1) maxLikeHoodGenotyper and 2) genBankSubmission. 
+At this moment, RABV-GUI provides two functions. 
+- 1) maxLikeHoodGenotyper
+- 2) genBankSubmission. 
 
 maxLikeHoodGenotyper requires rabies fasta file to tell which alignment/clade the sequence belongs. The image below shows running the maxLikeHoodGenotyper
 
