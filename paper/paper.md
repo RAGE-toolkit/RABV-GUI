@@ -1,4 +1,3 @@
-
 ---
 title: 'RABV-GUI: A Streamlined Interface for Rabies Virus Sequence Analysis and Genbank Submission'
 tags:
@@ -38,7 +37,7 @@ Rabies is a neglected zoonotic disease found in over 150 countries, mainly affec
 
 The software is developed in IntelliJ IDEA 2024.1.4 (Community Edition) and its GUI is designed using Scene Builder. The working principle of the tool is straightforward. The GUI interacts with Gluetools in the backend to perform GenBank submission and maxLikelihoodGenotyper to assign the alignment/clade to a given sequence. The GUI directly interacts with gluetools SQL database using a Java Database Connectivity (JDBC) connection for the database query and fetching the meta information. The detailed working of the GUI is illustrated in Figure 1. The database will be updated quarterly, with each release version named according to the database creation date. The test data for GenBank submission is downloaded from NCBI  nucleotide with accession number PP858775 and  PP858776.
 
-![Schematic workflow of the RABV-GUI.](workflow.png){ width=70% }
+![Schematic workflow of the RABV-GUI.](workflow.png)
 
 # Results and discussion
 
