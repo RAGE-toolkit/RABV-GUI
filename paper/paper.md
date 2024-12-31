@@ -3,6 +3,7 @@ title: 'RABV-GUI: A Streamlined Interface for Rabies Virus Sequence Analysis and
 tags:
   - RABV
   - rabies virus
+    
 authors:
  - name: Sandeep Kasaragod
    orcid: 0000-0001-9499-3653
