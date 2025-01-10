@@ -1,3 +1,7 @@
+HTML: <a href="https://joss.theoj.org/papers/574ad073d9699296ae0f4db05bfb207f"><img src="https://joss.theoj.org/papers/574ad073d9699296ae0f4db05bfb207f/status.svg"></a>
+Markdown: [![status](https://joss.theoj.org/papers/574ad073d9699296ae0f4db05bfb207f/status.svg)](https://joss.theoj.org/papers/574ad073d9699296ae0f4db05bfb207f)
+
+# Overview
 RABV-GUI is a graphical user interface designed for running RABV-GLUE, specifically to facilitate GenBank submissions for rabies sequences. In addition to supporting GenBank submissions, RABV-GUI has been updated with the latest rabies sequences and can perform database queries similar to those available on the RABV-GLUE website (http://rabv-glue.cvr.gla.ac.uk/).
 
 # Installation
