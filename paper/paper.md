@@ -17,9 +17,9 @@ authors:
    orcid: 0000-0001-9990-6299
    affiliation: "1, 2"
 affiliations:
- - name: School of Biodiversity, One Health & Veterinary Medicine, University of Glasgow, UK
+ - name: School of Biodiversity, One Health & Veterinary Medicine, University of Glasgow, United Kingdom
    index: 1
- - name: MRC-University of Glasgow Centre for Virus Research, UK
+ - name: MRC-University of Glasgow Centre for Virus Research, United Kingdom
    index: 2
 date: 31 December 2024
 bibliography: paper.bib
