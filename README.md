@@ -49,7 +49,7 @@ Securly store MySQL login credentials without exposing the password in plain tex
 ```
 ## Download and setup the environments
 
-Download RABV-GUI from [SOURCEFORGE](https://sourceforge.net/projects/rabv-gui/files/rabv-gui-v1.zip/download) or from [Google Drive](https://drive.google.com/file/d/1tlcmdSYaw1fI2ZSkblZMRWiFMXRprmkX/view?usp=sharing)
+Download RABV-GUI from [SOURCEFORGE](https://sourceforge.net/projects/rabv-gui/files/rabv-gui-v1.zip/download) or from [Google Drive](https://drive.google.com/file/d/1aP-O7w8HwfAIOMCtxHm7tgtdeGac9TwF/view?usp=sharing)
 ```shell
 unzip RABV-GUI-v1.zip
 cd RABV-GUI-v1
