@@ -55,7 +55,10 @@ unzip RABV-GUI-v1.zip
 cd RABV-GUI-v1
 bash install.sh
 ```
-
+## Creating environment (for Mac only)
+```
+mamba create -n rabv-gui python=3.11 openjdk=21
+```
 ### Launching the GUI
 ```shell
 bash RABV-GUI.sh
