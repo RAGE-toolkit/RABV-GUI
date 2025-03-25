@@ -1,5 +1,3 @@
-[![status](https://joss.theoj.org/papers/574ad073d9699296ae0f4db05bfb207f/status.svg)](https://joss.theoj.org/papers/574ad073d9699296ae0f4db05bfb207f)
-
 # Overview
 RABV-GUI is a graphical user interface designed for running RABV-GLUE, specifically to facilitate GenBank submissions for rabies sequences. In addition to supporting GenBank submissions, RABV-GUI has been updated with the latest rabies sequences and can perform database queries similar to those available on the RABV-GLUE website (http://rabv-glue.cvr.gla.ac.uk/).
 
@@ -51,7 +49,7 @@ Securly store MySQL login credentials without exposing the password in plain tex
 ```
 ## Download and setup the environments
 
-Download RABV-GUI from [SOURCEFORGE](https://sourceforge.net/projects/rabv-gui/files/rabv-gui-v1.zip/download) or from [Google Drive](https://drive.google.com/file/d/1aKLgeOuBSauspwPNWI3ffvrWKYHKqGeI/view?usp=sharing)
+Download RABV-GUI from [SOURCEFORGE](https://sourceforge.net/projects/rabv-gui/files/rabv-gui-v1.zip/download) or from [Google Drive](https://drive.google.com/file/d/1wLc4XtUkbYcx0keDmrTbprSuwVn_C5vJ/view?usp=sharing)
 ```shell
 unzip RABV-GUI-v1.zip
 cd RABV-GUI-v1
